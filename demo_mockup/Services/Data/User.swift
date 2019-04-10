@@ -3,7 +3,7 @@ import Foundation
 struct User: Codable {
     let name: String
     let username: String
-    
+    let id: Int
     
 //    init?(json: [String: Any]) {
 //        guard let name = json["name"] as? String
