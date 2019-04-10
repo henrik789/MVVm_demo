@@ -23,6 +23,7 @@ class UsersViewController: UIViewController {
     }
     
     func initConfig() {
+        tableView.register(UINib.init(nibName: UsersTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: UsersTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
@@ -44,8 +45,12 @@ extension UsersViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.textLabel?.text = viewModel.users[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: UsersTableViewCell.identifier, for: indexPath) as! UsersTableViewCell
+        cell.setContent()
+//        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+//        cell.textLabel?.text = viewModel.users[indexPath.row].name
+//        cell.detailTextLabel?.text = viewModel.users[indexPath.row].username
+//        print(viewModel.users[indexPath.row].username)
         return cell
     }
     

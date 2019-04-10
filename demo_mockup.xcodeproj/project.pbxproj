@@ -20,6 +20,8 @@
 		AF5D3540225CBC83002641A6 /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5D353E225CBC83002641A6 /* UsersViewController.xib */; };
 		AF5D3542225CBC95002641A6 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D3541225CBC95002641A6 /* UsersViewModel.swift */; };
 		AF5D3544225CC0AE002641A6 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D3543225CC0AE002641A6 /* ServiceManager.swift */; };
+		AFBEE2BC225E2FF100B25764 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEE2BA225E2FF100B25764 /* UsersTableViewCell.swift */; };
+		AFBEE2BD225E2FF100B25764 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBEE2BB225E2FF100B25764 /* UsersTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		AF5D353E225CBC83002641A6 /* UsersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersViewController.xib; sourceTree = "<group>"; };
 		AF5D3541225CBC95002641A6 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		AF5D3543225CC0AE002641A6 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		AFBEE2BA225E2FF100B25764 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		AFBEE2BB225E2FF100B25764 /* UsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +126,10 @@
 			isa = PBXGroup;
 			children = (
 				AF5D353D225CBC83002641A6 /* UsersViewController.swift */,
-				AF5D353E225CBC83002641A6 /* UsersViewController.xib */,
 				AF5D3541225CBC95002641A6 /* UsersViewModel.swift */,
+				AF5D353E225CBC83002641A6 /* UsersViewController.xib */,
+				AFBEE2BA225E2FF100B25764 /* UsersTableViewCell.swift */,
+				AFBEE2BB225E2FF100B25764 /* UsersTableViewCell.xib */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -189,6 +195,7 @@
 				AF5D3529225CAEE7002641A6 /* LaunchScreen.storyboard in Resources */,
 				AF5D3540225CBC83002641A6 /* UsersViewController.xib in Resources */,
 				AF5D3526225CAEE7002641A6 /* Assets.xcassets in Resources */,
+				AFBEE2BD225E2FF100B25764 /* UsersTableViewCell.xib in Resources */,
 				AF5D3524225CAEE6002641A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +211,7 @@
 				AF5D3532225CB956002641A6 /* NetworkService.swift in Sources */,
 				AF5D353A225CBB93002641A6 /* User.swift in Sources */,
 				AF5D353F225CBC83002641A6 /* UsersViewController.swift in Sources */,
+				AFBEE2BC225E2FF100B25764 /* UsersTableViewCell.swift in Sources */,
 				AF5D3537225CBA27002641A6 /* Request.swift in Sources */,
 				AF5D3544225CC0AE002641A6 /* ServiceManager.swift in Sources */,
 				AF5D3542225CBC95002641A6 /* UsersViewModel.swift in Sources */,
