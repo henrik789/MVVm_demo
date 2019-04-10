@@ -5,14 +5,6 @@ struct User: Codable {
     let username: String
     let id: Int
     
-//    init?(json: [String: Any]) {
-//        guard let name = json["name"] as? String
-//            else {
-//                return nil
-//        }
-//        self.name = name
-//
-//    }
 }
 
 
