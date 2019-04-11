@@ -3,8 +3,8 @@ import Foundation
 struct User: Codable {
     let name: String
     let username: String
-    let id: Int
-    
+    let phone: String
+    let email: String
 }
 
 
