@@ -14,6 +14,7 @@ class  DataManager {
             print("HTTP Response: \(response)")
             var users = [User]()
             for anItem in response as! [Dictionary<String, AnyObject>] {
+                
                 let usersName = anItem["name"] as! String
                 let usersPhone = anItem["phone"] as! String
                 let usersUserName = anItem["username"] as! String
