@@ -1,5 +1,6 @@
 import Foundation
 
+private let badResponseError = NSError(domain: "Bad network response", code: 2, userInfo: nil)
 // Handle all data
 class  DataManager {
     
@@ -10,23 +11,20 @@ class  DataManager {
     }
     
     func getUsers(completion: @escaping ([User], Error?) -> Void) {
-        networkService.addRequest(.getUsers) { (response) in
-            print("HTTP Response: \(response)")
-            var users = [User]()
-            for anItem in response as! [Dictionary<String, AnyObject>] {
-                
-                let usersName = anItem["name"] as! String
-                let usersPhone = anItem["phone"] as! String
-                let usersUserName = anItem["username"] as! String
-                let usersEmail = anItem["email"] as! String
-                let industry = User(name: usersName, username: usersUserName, phone: usersPhone, email: usersEmail)
-                users.append(industry)
-                print( "Name: \(usersName), Phone: \(usersPhone), Username: \(usersUserName), Email: \(usersEmail)" )
+        networkService.addRequest(.getUsers) { (data, response, error)  in
+            guard let data = data as? [[String: Any]], error == nil else {
+                let error = error ?? badResponseError
+                completion([], error)
+                return
             }
-                completion(users, nil)
-
+            
+            var users = [User]()
+            for userJSON in data {
+                if let user = try? User(json: userJSON) {
+                    users.append(user)
+                }
+            }
+            completion(users, nil)
         }
     }
 }
-
-

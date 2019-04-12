@@ -23,7 +23,7 @@ class UsersViewController: UIViewController {
     }
     
     func initConfig() {
-        self.title = "Adressbook"
+        self.title = viewModel.title
         tableView.register(UINib.init(nibName: UsersTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: UsersTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
@@ -51,10 +51,11 @@ extension UsersViewController: UITableViewDataSource {
 //        let cellData = viewModel.users[indexPath.row]
 //        cell.setContent(user: cellData)
 //        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.nameLabel.text = viewModel.users[indexPath.row].name
-        cell.idLabel.text = viewModel.users[indexPath.row].username
-        cell.emailLabel.text = viewModel.users[indexPath.row].email
-        cell.phoneLabel.text = viewModel.users[indexPath.row].phone
+        let user = viewModel.users[indexPath.row]
+        cell.nameLabel.text = user.name
+        cell.idLabel.text = user.username
+        cell.emailLabel.text = user.email
+        cell.phoneLabel.text = user.phone
 //        print(viewModel.users[indexPath.row].username)
         return cell
     }

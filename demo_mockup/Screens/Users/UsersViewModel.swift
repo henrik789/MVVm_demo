@@ -3,6 +3,7 @@ import Foundation
 class UsersViewModel {
     let dataManager: DataManager
     private(set) var users: [User] = []
+    let title = "Adressbook"
     
     init(dataManager: DataManager) {
         self.dataManager = dataManager
