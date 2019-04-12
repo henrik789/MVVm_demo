@@ -11,11 +11,18 @@ class UsersViewModel {
     func updateUsers(completion: @escaping (Error?) -> Void) {
         dataManager.getUsers { (users, error) in
             guard error == nil else {
-                completion(error)
+                dispatchOnMain(completion, with: error)
                 return
             }
             self.users = users
-            completion(nil)
+            dispatchOnMain(completion, with: nil)
         }
+    }
+}
+
+
+public func dispatchOnMain<T>(_ block: @escaping (T)->Void, with parameters: T) {
+    DispatchQueue.main.async {
+        block(parameters)
     }
 }
