@@ -12,19 +12,19 @@ class  DataManager {
     
     func getUsers(completion: @escaping ([User], Error?) -> Void) {
         networkService.addRequest(.getUsers) { (data, response, error)  in
-            guard let data = data as? [[String: Any]], error == nil else {
+            guard let data = data , error == nil else {
                 let error = error ?? badResponseError
                 completion([], error)
                 return
             }
             
-            var users = [User]()
-            for userJSON in data {
-                if let user = try? User(json: userJSON) {
-                    users.append(user)
-                }
+            do {
+                let decoder = JSONDecoder()
+                let users = try decoder.decode([User].self, from: data)
+                completion(users, nil)
+            } catch {
+                completion([], error)
             }
-            completion(users, nil)
         }
     }
 }
