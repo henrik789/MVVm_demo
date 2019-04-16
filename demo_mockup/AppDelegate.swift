@@ -12,15 +12,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var serviceManager = ServiceManager()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        
-        let userViewModel = UsersViewModel(dataManager: serviceManager.dataManager)
-        window?.rootViewController = UsersViewController(viewModel: userViewModel)
-        
-        
+        window?.rootViewController = MainNavigationController()
         return true
     }
 
