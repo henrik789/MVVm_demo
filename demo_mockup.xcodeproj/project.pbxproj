@@ -55,6 +55,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF56B51F226610C200FFF54D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		AF5D3512225CAEE6002641A6 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +124,7 @@
 		AF5D353B225CBC4A002641A6 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				AF56B51F226610C200FFF54D /* Detail */,
 				AF5D353C225CBC53002641A6 /* Users */,
 			);
 			path = Screens;

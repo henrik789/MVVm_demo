@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="UsersTableViewCell" customModule="demo_mockup" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="UsersTableViewCell" customModule="demo_mockup" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -20,41 +20,41 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XAP-qr-uQx">
-                        <rect key="frame" x="80" y="10" width="230" height="19.5"/>
+                        <rect key="frame" x="95" y="10" width="215" height="17"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwf-5O-ZyG" userLabel="idLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="39.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <rect key="frame" x="0.0" y="0.0" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDH-fW-RRQ" userLabel="nameLabel">
-                                <rect key="frame" x="49.5" y="0.0" width="180.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <rect key="frame" x="45.5" y="0.0" width="169.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="rri-21-eyV">
-                        <rect key="frame" x="80" y="39.5" width="230" height="52"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="rri-21-eyV">
+                        <rect key="frame" x="85" y="29" width="225" height="38"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lil-CC-ugH" userLabel="phoneLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="230" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <rect key="frame" x="0.0" y="0.0" width="225" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JC-se-12Q" userLabel="emailLabel">
-                                <rect key="frame" x="0.0" y="32.5" width="230" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <rect key="frame" x="0.0" y="21" width="225" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="z87-jk-Rjf">
-                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <rect key="frame" x="15" y="10" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="9yR-oS-uue"/>
                             <constraint firstAttribute="width" constant="60" id="ROk-Ea-0fy"/>
@@ -67,11 +67,11 @@
                     <constraint firstAttribute="bottom" secondItem="rri-21-eyV" secondAttribute="bottom" constant="10" id="YhU-1V-eiR"/>
                     <constraint firstAttribute="trailing" secondItem="XAP-qr-uQx" secondAttribute="trailing" constant="10" id="dk4-De-gYP"/>
                     <constraint firstAttribute="trailing" secondItem="rri-21-eyV" secondAttribute="trailing" constant="10" id="g0d-GJ-aga"/>
-                    <constraint firstItem="z87-jk-Rjf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="kTs-zQ-39c"/>
+                    <constraint firstItem="z87-jk-Rjf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="kTs-zQ-39c"/>
                     <constraint firstItem="z87-jk-Rjf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="l1F-2q-OA8"/>
-                    <constraint firstItem="XAP-qr-uQx" firstAttribute="leading" secondItem="z87-jk-Rjf" secondAttribute="trailing" constant="10" id="rJ1-gd-uki"/>
+                    <constraint firstItem="XAP-qr-uQx" firstAttribute="leading" secondItem="z87-jk-Rjf" secondAttribute="trailing" constant="20" id="rJ1-gd-uki"/>
                     <constraint firstAttribute="bottom" secondItem="z87-jk-Rjf" secondAttribute="bottom" constant="10" id="wi1-K2-aw4"/>
-                    <constraint firstItem="rri-21-eyV" firstAttribute="top" secondItem="XAP-qr-uQx" secondAttribute="bottom" constant="10" id="z0f-23-AfG"/>
+                    <constraint firstItem="rri-21-eyV" firstAttribute="top" secondItem="XAP-qr-uQx" secondAttribute="bottom" constant="2" id="z0f-23-AfG"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

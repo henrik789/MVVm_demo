@@ -51,7 +51,7 @@ extension UsersViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UsersTableViewCell.identifier, for: indexPath) as! UsersTableViewCell
-
+        cell.config()
         let user = viewModel.users[indexPath.row]
         let image = viewModel.image
         cell.nameLabel.text = user.name
