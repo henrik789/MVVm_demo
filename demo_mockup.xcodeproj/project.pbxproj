@@ -10,6 +10,8 @@
 		AF56B523226611AF00FFF54D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56B521226611AF00FFF54D /* HomeViewController.swift */; };
 		AF56B524226611AF00FFF54D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF56B522226611AF00FFF54D /* HomeViewController.xib */; };
 		AF56B5272266130900FFF54D /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56B5262266130900FFF54D /* MainNavigationController.swift */; };
+		AF56B52A22661B8D00FFF54D /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56B52822661B8D00FFF54D /* ImagesViewController.swift */; };
+		AF56B52B22661B8D00FFF54D /* ImagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF56B52922661B8D00FFF54D /* ImagesViewController.xib */; };
 		AF5D351F225CAEE6002641A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D351E225CAEE6002641A6 /* AppDelegate.swift */; };
 		AF5D3521225CAEE6002641A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D3520225CAEE6002641A6 /* ViewController.swift */; };
 		AF5D3524225CAEE6002641A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5D3522225CAEE6002641A6 /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 		AF56B521226611AF00FFF54D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AF56B522226611AF00FFF54D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		AF56B5262266130900FFF54D /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		AF56B52822661B8D00FFF54D /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		AF56B52922661B8D00FFF54D /* ImagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesViewController.xib; sourceTree = "<group>"; };
 		AF5D351B225CAEE6002641A6 /* demo_mockup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo_mockup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5D351E225CAEE6002641A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF5D3520225CAEE6002641A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 		AF56B51F226610C200FFF54D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AF56B52822661B8D00FFF54D /* ImagesViewController.swift */,
+				AF56B52922661B8D00FFF54D /* ImagesViewController.xib */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 				AF5D3540225CBC83002641A6 /* UsersViewController.xib in Resources */,
 				AF5D3526225CAEE7002641A6 /* Assets.xcassets in Resources */,
 				AFBEE2BD225E2FF100B25764 /* UsersTableViewCell.xib in Resources */,
+				AF56B52B22661B8D00FFF54D /* ImagesViewController.xib in Resources */,
 				AF5D3524225CAEE6002641A6 /* Main.storyboard in Resources */,
 				AF56B524226611AF00FFF54D /* HomeViewController.xib in Resources */,
 			);
@@ -250,6 +257,7 @@
 				AF56B5272266130900FFF54D /* MainNavigationController.swift in Sources */,
 				AF5D3544225CC0AE002641A6 /* ServiceManager.swift in Sources */,
 				AF56B523226611AF00FFF54D /* HomeViewController.swift in Sources */,
+				AF56B52A22661B8D00FFF54D /* ImagesViewController.swift in Sources */,
 				AF5D3542225CBC95002641A6 /* UsersViewModel.swift in Sources */,
 				AF5D351F225CAEE6002641A6 /* AppDelegate.swift in Sources */,
 				AF5D3534225CB97A002641A6 /* DataManager.swift in Sources */,
