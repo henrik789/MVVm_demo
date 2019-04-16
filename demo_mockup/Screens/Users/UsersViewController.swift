@@ -47,16 +47,12 @@ extension UsersViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UsersTableViewCell.identifier, for: indexPath) as! UsersTableViewCell
-        
-//        let cellData = viewModel.users[indexPath.row]
-//        cell.setContent(user: cellData)
-//        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+
         let user = viewModel.users[indexPath.row]
         cell.nameLabel.text = user.name
         cell.idLabel.text = user.username
         cell.emailLabel.text = user.email
         cell.phoneLabel.text = user.phone
-//        print(viewModel.users[indexPath.row].username)
         return cell
     }
     
@@ -66,6 +62,7 @@ extension UsersViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        tableView.scrollToRow(at: indexPath, at: .top, animated: true)
     }
     
 }

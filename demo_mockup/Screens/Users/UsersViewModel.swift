@@ -19,6 +19,18 @@ class UsersViewModel {
             dispatchOnMain(completion, with: nil)
         }
     }
+    
+    func updateImages(completion: @escaping (Error?) -> Void) {
+        dataManager.getImages { (image, error) in
+            guard error == nil else {
+            dispatchOnMain(completion, with: error)
+                    return
+            }
+            self.image = image
+            dispatchOnMain(completion, with: error)
+        }
+    }
+    
 }
 
 

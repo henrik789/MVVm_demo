@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 private let badResponseError = NSError(domain: "Bad network response", code: 2, userInfo: nil)
 // Handle all data
@@ -27,4 +27,23 @@ class  DataManager {
             }
         }
     }
+    
+    func getImages(completion: @escaping (UIImage, Error?) -> Void) {
+        networkService.addRequest(.getImages) { (data, response, error) in
+            guard let data = data, error = nil else {
+                let error = error ?? badResponseError
+                completion([], error)
+                return
+            }
+            do{
+                let image = UIImage(data: data)
+                completion(image, nil)
+            } catch {
+               completion([], error)
+            }
+            
+            
+        }
+    }
+    
 }
