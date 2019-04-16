@@ -35,6 +35,10 @@ class UsersViewController: UIViewController {
         viewModel.updateUsers { (error) in
             self.tableView.reloadData()
         }
+        viewModel.updateImages { (error) in
+            self.tableView.reloadData()
+        }
+        
     }
 
 }
@@ -49,10 +53,12 @@ extension UsersViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: UsersTableViewCell.identifier, for: indexPath) as! UsersTableViewCell
 
         let user = viewModel.users[indexPath.row]
+        let image = viewModel.image
         cell.nameLabel.text = user.name
         cell.idLabel.text = user.username
         cell.emailLabel.text = user.email
         cell.phoneLabel.text = user.phone
+        cell.mainImage.image = image
         return cell
     }
     
@@ -62,7 +68,6 @@ extension UsersViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        tableView.scrollToRow(at: indexPath, at: .top, animated: true)
     }
     
 }

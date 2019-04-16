@@ -30,19 +30,16 @@ class  DataManager {
     
     func getImages(completion: @escaping (UIImage, Error?) -> Void) {
         networkService.addRequest(.getImages) { (data, response, error) in
-            guard let data = data, error = nil else {
+            guard let data = data, error == nil else {
                 let error = error ?? badResponseError
-                completion([], error)
+                completion(UIImage(), error)
                 return
             }
-            do{
-                let image = UIImage(data: data)
+            
+            if let image = UIImage(data: data){
                 completion(image, nil)
-            } catch {
-               completion([], error)
             }
-            
-            
+          
         }
     }
     

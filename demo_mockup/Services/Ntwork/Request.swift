@@ -9,7 +9,7 @@ extension Request {
     var url: URL {
         switch self {
         case .getImages:
-            return URL(string: "https://jsonplaceholder.typicode.com/photos")!
+            return URL(string: "https://picsum.photos/60/?random")!
         case .getUsers:
             return URL(string: "https://jsonplaceholder.typicode.com/users")!
         }

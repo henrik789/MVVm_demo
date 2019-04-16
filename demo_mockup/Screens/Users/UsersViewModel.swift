@@ -1,8 +1,10 @@
-import Foundation
+import UIKit
 
 class UsersViewModel {
     let dataManager: DataManager
     private(set) var users: [User] = []
+//    private(set) var images: [Image] = []
+    private(set) var image = UIImage()
     let title = "Adressbook"
     
     init(dataManager: DataManager) {

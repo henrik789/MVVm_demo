@@ -55,7 +55,6 @@
                     </stackView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="z87-jk-Rjf">
                         <rect key="frame" x="10" y="10" width="60" height="60"/>
-                        <color key="backgroundColor" red="0.99523061513900757" green="0.20799154043197632" blue="0.0036011547781527042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="60" id="9yR-oS-uue"/>
                             <constraint firstAttribute="width" constant="60" id="ROk-Ea-0fy"/>
@@ -79,6 +78,7 @@
             <connections>
                 <outlet property="emailLabel" destination="4JC-se-12Q" id="Eox-if-cgi"/>
                 <outlet property="idLabel" destination="lwf-5O-ZyG" id="86I-Td-efW"/>
+                <outlet property="mainImage" destination="z87-jk-Rjf" id="Cgl-Lh-Tqd"/>
                 <outlet property="nameLabel" destination="NDH-fW-RRQ" id="6aL-yW-m0J"/>
                 <outlet property="phoneLabel" destination="Lil-CC-ugH" id="pck-s1-w1K"/>
             </connections>
