@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImagesViewController" customModule="demo_mockup" customModuleProvider="target">
             <connections>
+                <outlet property="button1" destination="i7J-r2-lZu" id="S3n-pr-coy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,10 +34,14 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7J-r2-lZu">
-                    <rect key="frame" x="164" y="547" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7J-r2-lZu" customClass="PushButton" customModule="demo_mockup" customModuleProvider="target">
+                    <rect key="frame" x="147" y="506" width="80" height="80"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                            <color key="value" red="0.21720483899116516" green="0.91852253675460815" blue="0.70583933591842651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isAddButton" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="imgeButton:" destination="-1" eventType="touchUpInside" id="9i0-hg-eiF"/>
                     </connections>
@@ -45,11 +50,15 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="BHw-wn-g34" firstAttribute="top" secondItem="gc5-YB-Hb6" secondAttribute="bottom" constant="44" id="1et-vz-Iul"/>
+                <constraint firstItem="i7J-r2-lZu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="147" id="CAx-PS-gNc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="i7J-r2-lZu" secondAttribute="bottom" constant="81" id="LhE-3S-zcU"/>
+                <constraint firstItem="i7J-r2-lZu" firstAttribute="top" secondItem="BHw-wn-g34" secondAttribute="bottom" constant="100" id="McX-j2-7lb"/>
                 <constraint firstAttribute="trailing" secondItem="gc5-YB-Hb6" secondAttribute="trailing" id="OCY-hS-ehP"/>
                 <constraint firstItem="gc5-YB-Hb6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="W79-sa-D4U"/>
                 <constraint firstItem="gc5-YB-Hb6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ysj-BD-wMd"/>
                 <constraint firstItem="gc5-YB-Hb6" firstAttribute="centerX" secondItem="BHw-wn-g34" secondAttribute="centerX" id="d62-Xf-FBC"/>
                 <constraint firstItem="BHw-wn-g34" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="nAz-k8-333"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i7J-r2-lZu" secondAttribute="trailing" constant="148" id="uPo-qQ-rW6"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BHw-wn-g34" secondAttribute="bottom" constant="261" id="ueR-A6-DGl"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

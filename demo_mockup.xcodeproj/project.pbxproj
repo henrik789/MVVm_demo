@@ -27,6 +27,7 @@
 		AF5D3544225CC0AE002641A6 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D3543225CC0AE002641A6 /* ServiceManager.swift */; };
 		AFBEE2BC225E2FF100B25764 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEE2BA225E2FF100B25764 /* UsersTableViewCell.swift */; };
 		AFBEE2BD225E2FF100B25764 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBEE2BB225E2FF100B25764 /* UsersTableViewCell.xib */; };
+		AFC5FC3422676A500036030A /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5FC3322676A500036030A /* PushButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		AF5D3543225CC0AE002641A6 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		AFBEE2BA225E2FF100B25764 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		AFBEE2BB225E2FF100B25764 /* UsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersTableViewCell.xib; sourceTree = "<group>"; };
+		AFC5FC3322676A500036030A /* PushButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		AF56B51F226610C200FFF54D /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AFC5FC3322676A500036030A /* PushButton.swift */,
 				AF56B52822661B8D00FFF54D /* ImagesViewController.swift */,
 				AF56B52922661B8D00FFF54D /* ImagesViewController.xib */,
 			);
@@ -255,6 +258,7 @@
 				AFBEE2BC225E2FF100B25764 /* UsersTableViewCell.swift in Sources */,
 				AF5D3537225CBA27002641A6 /* Request.swift in Sources */,
 				AF56B5272266130900FFF54D /* MainNavigationController.swift in Sources */,
+				AFC5FC3422676A500036030A /* PushButton.swift in Sources */,
 				AF5D3544225CC0AE002641A6 /* ServiceManager.swift in Sources */,
 				AF56B523226611AF00FFF54D /* HomeViewController.swift in Sources */,
 				AF56B52A22661B8D00FFF54D /* ImagesViewController.swift in Sources */,
