@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF09ACAA226F06C100C90AB5 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF09ACA9226F06C100C90AB5 /* Animation.swift */; };
+		AF09ACAD226F105900C90AB5 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF09ACAB226F105900C90AB5 /* HomeCollectionViewCell.swift */; };
+		AF09ACAE226F105900C90AB5 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF09ACAC226F105900C90AB5 /* HomeCollectionViewCell.xib */; };
 		AF56B523226611AF00FFF54D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56B521226611AF00FFF54D /* HomeViewController.swift */; };
 		AF56B524226611AF00FFF54D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF56B522226611AF00FFF54D /* HomeViewController.xib */; };
 		AF56B5272266130900FFF54D /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56B5262266130900FFF54D /* MainNavigationController.swift */; };
@@ -31,6 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF09ACA9226F06C100C90AB5 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		AF09ACAB226F105900C90AB5 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF09ACAC226F105900C90AB5 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		AF56B521226611AF00FFF54D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AF56B522226611AF00FFF54D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		AF56B5262266130900FFF54D /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
@@ -67,12 +73,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AF56B51F226610C200FFF54D /* Images */ = {
+		AF09ACA8226F052F00C90AB5 /* Graphics,Anim */ = {
 			isa = PBXGroup;
 			children = (
 				AFC5FC3322676A500036030A /* PushButton.swift */,
+			);
+			path = "Graphics,Anim";
+			sourceTree = "<group>";
+		};
+		AF56B51F226610C200FFF54D /* Images */ = {
+			isa = PBXGroup;
+			children = (
 				AF56B52822661B8D00FFF54D /* ImagesViewController.swift */,
 				AF56B52922661B8D00FFF54D /* ImagesViewController.xib */,
+				AF09ACA9226F06C100C90AB5 /* Animation.swift */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -82,6 +96,8 @@
 			children = (
 				AF56B521226611AF00FFF54D /* HomeViewController.swift */,
 				AF56B522226611AF00FFF54D /* HomeViewController.xib */,
+				AF09ACAB226F105900C90AB5 /* HomeCollectionViewCell.swift */,
+				AF09ACAC226F105900C90AB5 /* HomeCollectionViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -129,6 +145,7 @@
 		AF5D3530225CB93C002641A6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AF09ACA8226F052F00C90AB5 /* Graphics,Anim */,
 				AF5D3538225CBB7E002641A6 /* Data */,
 				AF5D3535225CBA11002641A6 /* Ntwork */,
 				AF5D3543225CC0AE002641A6 /* ServiceManager.swift */,
@@ -237,6 +254,7 @@
 				AF5D3529225CAEE7002641A6 /* LaunchScreen.storyboard in Resources */,
 				AF5D3540225CBC83002641A6 /* UsersViewController.xib in Resources */,
 				AF5D3526225CAEE7002641A6 /* Assets.xcassets in Resources */,
+				AF09ACAE226F105900C90AB5 /* HomeCollectionViewCell.xib in Resources */,
 				AFBEE2BD225E2FF100B25764 /* UsersTableViewCell.xib in Resources */,
 				AF56B52B22661B8D00FFF54D /* ImagesViewController.xib in Resources */,
 				AF5D3524225CAEE6002641A6 /* Main.storyboard in Resources */,
@@ -258,12 +276,14 @@
 				AFBEE2BC225E2FF100B25764 /* UsersTableViewCell.swift in Sources */,
 				AF5D3537225CBA27002641A6 /* Request.swift in Sources */,
 				AF56B5272266130900FFF54D /* MainNavigationController.swift in Sources */,
+				AF09ACAD226F105900C90AB5 /* HomeCollectionViewCell.swift in Sources */,
 				AFC5FC3422676A500036030A /* PushButton.swift in Sources */,
 				AF5D3544225CC0AE002641A6 /* ServiceManager.swift in Sources */,
 				AF56B523226611AF00FFF54D /* HomeViewController.swift in Sources */,
 				AF56B52A22661B8D00FFF54D /* ImagesViewController.swift in Sources */,
 				AF5D3542225CBC95002641A6 /* UsersViewModel.swift in Sources */,
 				AF5D351F225CAEE6002641A6 /* AppDelegate.swift in Sources */,
+				AF09ACAA226F06C100C90AB5 /* Animation.swift in Sources */,
 				AF5D3534225CB97A002641A6 /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
