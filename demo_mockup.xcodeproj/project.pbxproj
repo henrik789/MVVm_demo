@@ -10,6 +10,7 @@
 		AF09ACAA226F06C100C90AB5 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF09ACA9226F06C100C90AB5 /* Animation.swift */; };
 		AF09ACAD226F105900C90AB5 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF09ACAB226F105900C90AB5 /* HomeCollectionViewCell.swift */; };
 		AF09ACAE226F105900C90AB5 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF09ACAC226F105900C90AB5 /* HomeCollectionViewCell.xib */; };
+		AF09ACB0226F423D00C90AB5 /* UltravisualLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF09ACAF226F423D00C90AB5 /* UltravisualLayout.swift */; };
 		AF56B523226611AF00FFF54D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56B521226611AF00FFF54D /* HomeViewController.swift */; };
 		AF56B524226611AF00FFF54D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF56B522226611AF00FFF54D /* HomeViewController.xib */; };
 		AF56B5272266130900FFF54D /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56B5262266130900FFF54D /* MainNavigationController.swift */; };
@@ -37,6 +38,7 @@
 		AF09ACA9226F06C100C90AB5 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		AF09ACAB226F105900C90AB5 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF09ACAC226F105900C90AB5 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		AF09ACAF226F423D00C90AB5 /* UltravisualLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UltravisualLayout.swift; sourceTree = "<group>"; };
 		AF56B521226611AF00FFF54D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AF56B522226611AF00FFF54D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		AF56B5262266130900FFF54D /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		AF09ACA8226F052F00C90AB5 /* Graphics,Anim */ = {
 			isa = PBXGroup;
 			children = (
+				AF09ACAF226F423D00C90AB5 /* UltravisualLayout.swift */,
 				AFC5FC3322676A500036030A /* PushButton.swift */,
 			);
 			path = "Graphics,Anim";
@@ -275,6 +278,7 @@
 				AF5D353F225CBC83002641A6 /* UsersViewController.swift in Sources */,
 				AFBEE2BC225E2FF100B25764 /* UsersTableViewCell.swift in Sources */,
 				AF5D3537225CBA27002641A6 /* Request.swift in Sources */,
+				AF09ACB0226F423D00C90AB5 /* UltravisualLayout.swift in Sources */,
 				AF56B5272266130900FFF54D /* MainNavigationController.swift in Sources */,
 				AF09ACAD226F105900C90AB5 /* HomeCollectionViewCell.swift in Sources */,
 				AFC5FC3422676A500036030A /* PushButton.swift in Sources */,
