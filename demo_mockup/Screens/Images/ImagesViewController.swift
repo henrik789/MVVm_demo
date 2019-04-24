@@ -11,7 +11,6 @@ class ImagesViewController: UIViewController {
     @IBOutlet weak var button1: PushButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Images"
         screenWidth = self.view.frame.size.width
         screenHeight = self.view.frame.size.height
         config()
@@ -26,8 +25,21 @@ class ImagesViewController: UIViewController {
         viewDemo.backgroundColor = UIColor.yellow
         viewDemo.frame = CGRect(x: (screenWidth / 2) - 30, y: (screenHeight / 2) - 30, width: 60, height: 60)
         viewDemo.alpha = 1
+        navigationItem.title = "Images"
+//        navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "Apply", style: .plain, target: self, action: #selector(self.apply))
+        navigationItem.prompt = "Press apply to..."
+        
         print(screenWidth, screenHeight)
     }
+    
+//    @objc func apply() {
+//        do {
+//            try
+//        } catch {
+//
+//        }
+//
+//    }
     
     @IBAction func imgeButton(_ sender: PushButton) {
         self.view.addSubview(viewDemo)

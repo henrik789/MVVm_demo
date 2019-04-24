@@ -10,9 +10,11 @@ enum HomeViewControllerAction {
 }
 
 class HomeViewController: UIViewController {
+    @IBOutlet weak var imageButton: UIButton!
+    @IBOutlet weak var galleryButton: UIButton!
+    @IBOutlet weak var usersButton: UIButton!
     
     weak var delegate: HomeViewControllerDelegate?
-//    @IBOutlet weak var collectionView: UICollectionView!
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -24,15 +26,19 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         self.title = "Navigation"
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.barStyle = .default
-        navigationController?.navigationBar.isTranslucent = true
-        navigationController?.navigationBar.tintColor = .black
-//        collectionView.dataSource = self
-//        collectionView.delegate = self
-//        collectionView.register(UINib.init(nibName: HomeCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: HomeCollectionViewCell.identifier)
+        config()
     }
     
+    func config(){
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.barStyle = .default
+        navigationController?.navigationBar.tintColor = .red
+        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
+        
+        imageButton.layer.cornerRadius = 25
+        galleryButton.layer.cornerRadius = 25
+        usersButton.layer.cornerRadius = 25
+    }
     @IBAction func imageGalleryButton(_ sender: Any) {
         delegate?.homeViewController(self, didSelect: .imageGallery)
     }
@@ -45,19 +51,4 @@ class HomeViewController: UIViewController {
         delegate?.homeViewController(self, didSelect: .images)
     }
 }
-
-//extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-//
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return 10
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCollectionViewCell.identifier, for: indexPath) as! HomeCollectionViewCell
-//        print("in cell...")
-//        cell.textLabel.text = HomeCollectionViewCell.identifier
-//        return cell
-//    }
-
-    
 
