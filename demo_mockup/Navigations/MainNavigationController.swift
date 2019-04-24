@@ -33,7 +33,8 @@ extension MainNavigationController: HomeViewControllerDelegate {
         case .images:
             viewController = ImagesViewController()
         case .imageGallery:
-            viewController = ImageCollectionViewController()
+            let galleryViewModel = ImageCollectionViewModel(dataManager: serviceManager.dataManager)
+            viewController = ImageCollectionViewController(viewModel: galleryViewModel)
         case .users:
             let userViewModel = UsersViewModel(dataManager: serviceManager.dataManager)
             viewController = UsersViewController(viewModel: userViewModel)

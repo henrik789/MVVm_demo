@@ -43,4 +43,19 @@ class  DataManager {
         }
     }
     
+    func getLargeImages(completion: @escaping (UIImage, Error?) -> Void) {
+        networkService.addRequest(.getBigImages) { (data, response, error) in
+            guard let data = data, error == nil else {
+                let error = error ?? badResponseError
+                completion(UIImage(), error)
+                return
+            }
+            
+            if let image = UIImage(data: data){
+                completion(image, nil)
+            }
+            
+        }
+    }
+    
 }

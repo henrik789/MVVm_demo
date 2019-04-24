@@ -13,6 +13,7 @@
 		AF2F7DAE22705CEA00055474 /* ImageCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF2F7DAC22705CEA00055474 /* ImageCollectionViewController.xib */; };
 		AF2F7DB52270647400055474 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F7DB32270647400055474 /* GalleryCollectionViewCell.swift */; };
 		AF2F7DB62270647400055474 /* GalleryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF2F7DB42270647400055474 /* GalleryCollectionViewCell.xib */; };
+		AF2F7DB8227098FC00055474 /* ImageCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F7DB7227098FC00055474 /* ImageCollectionViewModel.swift */; };
 		AF56B523226611AF00FFF54D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56B521226611AF00FFF54D /* HomeViewController.swift */; };
 		AF56B524226611AF00FFF54D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF56B522226611AF00FFF54D /* HomeViewController.xib */; };
 		AF56B5272266130900FFF54D /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF56B5262266130900FFF54D /* MainNavigationController.swift */; };
@@ -43,6 +44,7 @@
 		AF2F7DAC22705CEA00055474 /* ImageCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewController.xib; sourceTree = "<group>"; };
 		AF2F7DB32270647400055474 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF2F7DB42270647400055474 /* GalleryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCollectionViewCell.xib; sourceTree = "<group>"; };
+		AF2F7DB7227098FC00055474 /* ImageCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewModel.swift; sourceTree = "<group>"; };
 		AF56B521226611AF00FFF54D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AF56B522226611AF00FFF54D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		AF56B5262266130900FFF54D /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				AF2F7DAB22705CEA00055474 /* ImageCollectionViewController.swift */,
+				AF2F7DB7227098FC00055474 /* ImageCollectionViewModel.swift */,
 				AF2F7DAC22705CEA00055474 /* ImageCollectionViewController.xib */,
 				AF2F7DB32270647400055474 /* GalleryCollectionViewCell.swift */,
 				AF2F7DB42270647400055474 /* GalleryCollectionViewCell.xib */,
@@ -294,6 +297,7 @@
 				AFBEE2BC225E2FF100B25764 /* UsersTableViewCell.swift in Sources */,
 				AF5D3537225CBA27002641A6 /* Request.swift in Sources */,
 				AF2F7DAD22705CEA00055474 /* ImageCollectionViewController.swift in Sources */,
+				AF2F7DB8227098FC00055474 /* ImageCollectionViewModel.swift in Sources */,
 				AF09ACB0226F423D00C90AB5 /* UltravisualLayout.swift in Sources */,
 				AF56B5272266130900FFF54D /* MainNavigationController.swift in Sources */,
 				AFC5FC3422676A500036030A /* PushButton.swift in Sources */,

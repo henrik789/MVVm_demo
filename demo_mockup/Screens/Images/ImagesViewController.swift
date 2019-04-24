@@ -27,8 +27,6 @@ class ImagesViewController: UIViewController {
         viewDemo.alpha = 1
         navigationItem.title = "Images"
 //        navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "Apply", style: .plain, target: self, action: #selector(self.apply))
-        navigationItem.prompt = "Press apply to..."
-        
         print(screenWidth, screenHeight)
     }
     

@@ -1,11 +1,11 @@
 import UIKit
 
-class UsersViewModel {
+class ImageCollectionViewModel {
     let dataManager: DataManager
     private(set) var users: [User] = []
-//    private(set) var images: [Image] = []
+    //    private(set) var images: [Image] = []
     private(set) var image = UIImage()
-    let title = "Adressbook"
+    let title = "Images"
     
     init(dataManager: DataManager) {
         self.dataManager = dataManager
@@ -23,10 +23,10 @@ class UsersViewModel {
     }
     
     func updateImages(completion: @escaping (Error?) -> Void) {
-        dataManager.getImages { (image, error) in
+        dataManager.getLargeImages { (image, error) in
             guard error == nil else {
-            dispatchOnMain(completion, with: error)
-                    return
+                dispatchOnMain(completion, with: error)
+                return
             }
             self.image = image
             dispatchOnMain(completion, with: error)
@@ -35,8 +35,5 @@ class UsersViewModel {
     
 }
 
-public func dispatchOnMain<T>(_ block: @escaping (T)->Void, with parameters: T) {
-    DispatchQueue.main.async {
-        block(parameters)
-    }
-}
+
+
