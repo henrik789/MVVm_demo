@@ -12,7 +12,7 @@ extension Request {
         case .getImages:
             return URL(string: "https://picsum.photos/60/?random")!
         case .getBigImages:
-            return URL(string: "https://picsum.photos/300/?random")!
+            return URL(string: "https://picsum.photos/400/?random")!
         case .getUsers:
             return URL(string: "https://jsonplaceholder.typicode.com/users")!
         }

@@ -11,16 +11,16 @@ class ImageCollectionViewModel {
         self.dataManager = dataManager
     }
     
-    func updateUsers(completion: @escaping (Error?) -> Void) {
-        dataManager.getUsers { (users, error) in
-            guard error == nil else {
-                dispatchOnMain(completion, with: error)
-                return
-            }
-            self.users = users
-            dispatchOnMain(completion, with: nil)
-        }
-    }
+//    func updateUsers(completion: @escaping (Error?) -> Void) {
+//        dataManager.getUsers { (users, error) in
+//            guard error == nil else {
+//                dispatchOnMain(completion, with: error)
+//                return
+//            }
+//            self.users = users
+//            dispatchOnMain(completion, with: nil)
+//        }
+//    }
     
     func updateImages(completion: @escaping (Error?) -> Void) {
         dataManager.getLargeImages { (image, error) in

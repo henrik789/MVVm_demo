@@ -24,12 +24,12 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2JN-qj-pBZ">
-                    <rect key="frame" x="103.5" y="219.5" width="168" height="228"/>
+                    <rect key="frame" x="100" y="215" width="175" height="237"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YY9-CB-kXD">
-                            <rect key="frame" x="0.0" y="0.0" width="168" height="56"/>
+                            <rect key="frame" x="0.0" y="0.0" width="175" height="59"/>
                             <color key="backgroundColor" red="0.97462624311447144" green="0.12720018625259399" blue="0.018304426223039627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>
                             <inset key="contentEdgeInsets" minX="40" minY="10" maxX="40" maxY="10"/>
                             <state key="normal" title="Images">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -39,9 +39,9 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ME-yD-ue2" userLabel="Gallery">
-                            <rect key="frame" x="0.0" y="86" width="168" height="56"/>
+                            <rect key="frame" x="0.0" y="89" width="175" height="59"/>
                             <color key="backgroundColor" red="0.97462624311447144" green="0.12720018625259399" blue="0.018304426223039627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>
                             <inset key="contentEdgeInsets" minX="40" minY="10" maxX="40" maxY="10"/>
                             <state key="normal" title="Gallery">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -51,9 +51,9 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wX4-N7-H9P">
-                            <rect key="frame" x="0.0" y="172" width="168" height="56"/>
+                            <rect key="frame" x="0.0" y="178" width="175" height="59"/>
                             <color key="backgroundColor" red="0.97462624311447144" green="0.12720018625259399" blue="0.018304426223039627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>
                             <inset key="contentEdgeInsets" minX="40" minY="10" maxX="40" maxY="10"/>
                             <state key="normal" title="Users">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
