@@ -6,13 +6,13 @@ protocol HomeViewControllerDelegate: class {
 }
 
 enum HomeViewControllerAction {
-    case users, images
+    case users, images, imageGallery
 }
 
 class HomeViewController: UIViewController {
     
     weak var delegate: HomeViewControllerDelegate?
-    @IBOutlet weak var collectionView: UICollectionView!
+//    @IBOutlet weak var collectionView: UICollectionView!
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -23,15 +23,14 @@ class HomeViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        collectionView.dataSource = self
-        collectionView.delegate = self
-//        let width = (view.frame.size.width - 20) / 3
-//        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-//        layout.itemSize = CGSize(width: 320, height: 70)
-        collectionView.register(UINib.init(nibName: HomeCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: HomeCollectionViewCell.identifier)
-        
+//        collectionView.dataSource = self
+//        collectionView.delegate = self
+//        collectionView.register(UINib.init(nibName: HomeCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: HomeCollectionViewCell.identifier)
     }
     
+    @IBAction func imageGalleryButton(_ sender: Any) {
+        delegate?.homeViewController(self, didSelect: .imageGallery)
+    }
     
     @IBAction func usersButtonAction(_ sender: Any) {
         delegate?.homeViewController(self, didSelect: .users)
@@ -42,18 +41,18 @@ class HomeViewController: UIViewController {
     }
 }
 
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+//extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+//
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return 10
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCollectionViewCell.identifier, for: indexPath) as! HomeCollectionViewCell
+//        print("in cell...")
+//        cell.textLabel.text = HomeCollectionViewCell.identifier
+//        return cell
+//    }
+
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCollectionViewCell.identifier, for: indexPath) as! HomeCollectionViewCell
-        print("in cell...")
-        cell.textLabel.text = HomeCollectionViewCell.identifier
-        return cell
-    }
-    
-    
-}
+

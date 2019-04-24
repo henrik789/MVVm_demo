@@ -12,7 +12,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="demo_mockup" customModuleProvider="target">
             <connections>
-                <outlet property="collectionView" destination="pTD-2k-uTe" id="BEu-7X-KW9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,53 +20,54 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pTD-2k-uTe">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <collectionViewLayout key="collectionViewLayout" id="R26-yr-kzJ" customClass="UltravisualLayout" customModule="demo_mockup" customModuleProvider="target"/>
-                </collectionView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YY9-CB-kXD">
-                    <rect key="frame" x="237" y="577" width="60" height="40"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <state key="normal" title="Images">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <connections>
-                        <action selector="imagesButtonAction:" destination="-1" eventType="touchUpInside" id="HWt-MZ-R4e"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wX4-N7-H9P">
-                    <rect key="frame" x="95" y="577" width="60" height="40"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="60" id="M7N-kr-Tdu"/>
-                    </constraints>
-                    <state key="normal" title="Users">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                            <color key="value" red="0.97462624311447144" green="0.12720018625259399" blue="0.018304426223039627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="usersButtonAction:" destination="-1" eventType="touchUpInside" id="gQt-K7-Ndr"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="2JN-qj-pBZ">
+                    <rect key="frame" x="143.5" y="231.5" width="88" height="204"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YY9-CB-kXD">
+                            <rect key="frame" x="0.0" y="0.0" width="88" height="48"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                            <state key="normal" title="Images">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="imagesButtonAction:" destination="-1" eventType="touchUpInside" id="HWt-MZ-R4e"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ME-yD-ue2" userLabel="Gallery">
+                            <rect key="frame" x="0.0" y="78" width="88" height="48"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                            <state key="normal" title="Gallery">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="imageGalleryButton:" destination="-1" eventType="touchUpInside" id="CYs-O1-ZVG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wX4-N7-H9P">
+                            <rect key="frame" x="0.0" y="156" width="88" height="48"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="26"/>
+                            <state key="normal" title="Users">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                    <color key="value" red="0.97462624311447144" green="0.12720018625259399" blue="0.018304426223039627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="usersButtonAction:" destination="-1" eventType="touchUpInside" id="gQt-K7-Ndr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="wX4-N7-H9P" firstAttribute="baseline" secondItem="YY9-CB-kXD" secondAttribute="firstBaseline" id="3io-OY-OAY"/>
-                <constraint firstItem="pTD-2k-uTe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7Co-vo-utZ"/>
-                <constraint firstItem="pTD-2k-uTe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FvC-Vf-WGU"/>
-                <constraint firstItem="YY9-CB-kXD" firstAttribute="leading" secondItem="wX4-N7-H9P" secondAttribute="trailing" constant="82" id="Mdz-oj-fH6"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YY9-CB-kXD" secondAttribute="trailing" constant="78" id="Tc4-Cl-ulJ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wX4-N7-H9P" secondAttribute="bottom" constant="50" id="TqU-xo-npa"/>
-                <constraint firstItem="wX4-N7-H9P" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="557" id="Uuu-Qt-z5R"/>
-                <constraint firstItem="wX4-N7-H9P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="95" id="alt-a3-Z2T"/>
-                <constraint firstItem="wX4-N7-H9P" firstAttribute="top" secondItem="YY9-CB-kXD" secondAttribute="top" id="kQq-tL-b1s"/>
-                <constraint firstItem="pTD-2k-uTe" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="xDI-8M-Uus"/>
-                <constraint firstAttribute="trailing" secondItem="pTD-2k-uTe" secondAttribute="trailing" id="zOG-QE-D6a"/>
+                <constraint firstItem="2JN-qj-pBZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Gmq-Y2-b5R"/>
+                <constraint firstItem="2JN-qj-pBZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H4y-Qb-EZh"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>

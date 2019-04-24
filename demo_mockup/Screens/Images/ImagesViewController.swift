@@ -24,7 +24,6 @@ class ImagesViewController: UIViewController {
 
         viewDemo.backgroundColor = UIColor.yellow
         viewDemo.frame = CGRect(x: (screenWidth / 2) - 30, y: (screenHeight / 2) - 30, width: 60, height: 60)
-//        viewDemo.layer.cornerRadius = 30
         viewDemo.alpha = 1
         print(screenWidth, screenHeight)
     }

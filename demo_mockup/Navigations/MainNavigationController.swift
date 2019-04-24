@@ -31,10 +31,9 @@ extension MainNavigationController: HomeViewControllerDelegate {
         
         switch action {
         case .images:
-//            viewController = UIViewController()
-//            viewController.view.backgroundColor = .red
             viewController = ImagesViewController()
-            
+        case .imageGallery:
+            viewController = ImageCollectionViewController()
         case .users:
             let userViewModel = UsersViewModel(dataManager: serviceManager.dataManager)
             viewController = UsersViewController(viewModel: userViewModel)
