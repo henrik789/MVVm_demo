@@ -6,6 +6,8 @@ class ImageCollectionViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
+        self.title = "Image Gallery"
+
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UINib.init(nibName: GalleryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: GalleryCollectionViewCell.identifier)
@@ -21,12 +23,9 @@ extension ImageCollectionViewController: UICollectionViewDelegate, UICollectionV
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GalleryCollectionViewCell.identifier, for: indexPath) as! GalleryCollectionViewCell
-        print("in cell...")
         cell.textLabel.text = GalleryCollectionViewCell.identifier
         return cell
     }
-    
-    
 }
 
 

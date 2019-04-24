@@ -23,6 +23,11 @@ class HomeViewController: UIViewController {
     }
     
     override func viewDidLoad() {
+        self.title = "Navigation"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.barStyle = .default
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.tintColor = .black
 //        collectionView.dataSource = self
 //        collectionView.delegate = self
 //        collectionView.register(UINib.init(nibName: HomeCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: HomeCollectionViewCell.identifier)

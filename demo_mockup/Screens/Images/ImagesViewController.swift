@@ -11,6 +11,7 @@ class ImagesViewController: UIViewController {
     @IBOutlet weak var button1: PushButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Images"
         screenWidth = self.view.frame.size.width
         screenHeight = self.view.frame.size.height
         config()
