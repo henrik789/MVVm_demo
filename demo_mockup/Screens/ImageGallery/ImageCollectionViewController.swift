@@ -36,7 +36,7 @@ extension ImageCollectionViewController: UICollectionViewDelegate, UICollectionV
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GalleryCollectionViewCell.identifier, for: indexPath) as! GalleryCollectionViewCell
         cell.textLabel.text = GalleryCollectionViewCell.identifier
-        let randomNumber = Int.random(in: 1..<333)
+        let randomNumber = Int.random(in: 66..<88)
         let url = URL(string: "https://picsum.photos/id/\(indexPath.row + randomNumber)/600/600")
         cell.imageView.kf.indicatorType = .activity
         cell.imageView.kf.setImage(with: url)

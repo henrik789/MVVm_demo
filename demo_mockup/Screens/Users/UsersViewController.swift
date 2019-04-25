@@ -58,7 +58,7 @@ extension UsersViewController: UITableViewDataSource {
         cell.idLabel.text = user.username
         cell.emailLabel.text = user.email
         cell.phoneLabel.text = user.phone
-        let randomNumber = Int.random(in: 111..<222)
+        let randomNumber = Int.random(in: 77..<99)
         let url = URL(string: "https://picsum.photos/id/\(indexPath.row + randomNumber)/90/90")
         cell.mainImage.kf.indicatorType = .activity
         cell.mainImage.kf.setImage(with: url)
@@ -70,8 +70,12 @@ extension UsersViewController: UITableViewDataSource {
 
 extension UsersViewController: UITableViewDelegate {
     
+
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let vc = MapViewController() //change this to your class name
+        self.present(vc, animated: true, completion: nil)
         
     }
     

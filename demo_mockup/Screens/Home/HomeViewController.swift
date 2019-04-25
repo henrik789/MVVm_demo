@@ -84,9 +84,9 @@ class HomeViewController: UIViewController {
         delegate?.homeViewController(self, didSelect: .images)
     }
     
-    private var shadowLayer: CAShapeLayer!
-    private var cornerRadius: CGFloat = 25.0
-    private var fillColor: UIColor = .blue // the color applied to the shadowLayer, rather than the view's backgroundColor
+//    private var shadowLayer: CAShapeLayer!
+//    private var cornerRadius: CGFloat = 25.0
+//    private var fillColor: UIColor = .blue // the color applied to the shadowLayer, rather than the view's backgroundColor
     
 }
 

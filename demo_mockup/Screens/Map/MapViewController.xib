@@ -23,20 +23,21 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gpZ-gU-352">
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gpZ-gU-352">
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </mapView>
                 <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJM-U1-brW">
-                    <rect key="frame" x="0.0" y="140" width="375" height="50"/>
+                    <rect key="frame" x="0.0" y="140" width="375" height="80"/>
                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pHd-lG-eA5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N5q-JP-RIQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="cTX-SP-iN8">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <vibrancyEffect>
@@ -46,34 +47,51 @@
                         </subviews>
                     </view>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="vzU-Dz-DBW"/>
+                        <constraint firstAttribute="height" constant="80" id="fLi-1R-TR9"/>
                     </constraints>
-                    <blurEffect style="dark"/>
+                    <blurEffect style="light"/>
                 </visualEffectView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxT-jV-ZCk">
-                    <rect key="frame" x="20" y="150" width="300" height="20"/>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pUS-vr-qjc">
+                    <rect key="frame" x="0.0" y="170" width="365" height="31"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username and Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxT-jV-ZCk">
+                            <rect key="frame" x="0.0" y="0.0" width="285" height="31"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                            <color key="textColor" red="0.97462624311447144" green="0.12720018625259399" blue="0.018304426223039627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dV-HJ-AQ1">
+                            <rect key="frame" x="290" y="0.0" width="75" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="K6j-8X-CGQ"/>
+                                <constraint firstAttribute="width" constant="75" id="uok-LU-nqk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                            <state key="normal" title="Dismiss">
+                                <color key="titleColor" red="0.97462624311447144" green="0.12720018625259399" blue="0.018304426223039627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="dismissButton:" destination="-1" eventType="touchUpInside" id="q0O-8Q-Qqz"/>
+                            </connections>
+                        </button>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="20" id="An3-c3-1bK"/>
-                        <constraint firstAttribute="width" constant="300" id="e8E-Tf-dfQ"/>
+                        <constraint firstAttribute="height" constant="31" id="ziO-kW-HoZ"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                    <color key="textColor" red="0.9159432053565979" green="0.90295428037643433" blue="0.96913832426071167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                    <viewLayoutGuide key="safeArea" id="0DJ-oD-qn1"/>
+                </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="GJM-U1-brW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="120" id="0Te-DT-8Jd"/>
-                <constraint firstItem="gpZ-gU-352" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="9qK-K6-dtT"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gpZ-gU-352" secondAttribute="bottom" id="H6o-2N-cYs"/>
-                <constraint firstItem="gpZ-gU-352" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="d56-j2-bO2"/>
-                <constraint firstItem="MxT-jV-ZCk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fbp-kL-MWQ"/>
-                <constraint firstItem="MxT-jV-ZCk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="130" id="kcy-PG-K7Z"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GJM-U1-brW" secondAttribute="trailing" id="lj6-w8-gTT"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gpZ-gU-352" secondAttribute="trailing" id="o2E-ug-bhJ"/>
-                <constraint firstItem="GJM-U1-brW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zgC-TB-BVk"/>
+                <constraint firstItem="GJM-U1-brW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="L6a-rl-dfK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pUS-vr-qjc" secondAttribute="trailing" constant="10" id="MQW-Eb-1XF"/>
+                <constraint firstItem="pUS-vr-qjc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="150" id="MbH-zs-tPc"/>
+                <constraint firstItem="GJM-U1-brW" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="PYn-bQ-auc"/>
+                <constraint firstItem="GJM-U1-brW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="120" id="Y0s-SV-nOi"/>
+                <constraint firstItem="pUS-vr-qjc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bN5-dO-gBK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
         </view>
     </objects>
 </document>

@@ -9,8 +9,11 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 
-
+    @IBAction func dismissButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
