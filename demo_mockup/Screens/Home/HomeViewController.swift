@@ -10,6 +10,7 @@ enum HomeViewControllerAction {
 }
 
 class HomeViewController: UIViewController {
+
     @IBOutlet weak var imageButton: UIButton!
     @IBOutlet weak var galleryButton: UIButton!
     @IBOutlet weak var usersButton: UIButton!
@@ -30,6 +31,9 @@ class HomeViewController: UIViewController {
     }
     
     func config(){
+    
+//        upperImage.transform = CGAffineTransform(rotationAngle: (90.0 * .pi) / 180.0)
+//        lowerImage.transform = CGAffineTransform(rotationAngle: (270.0 * .pi) / 180.0)
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.barStyle = .default
         navigationController?.navigationBar.tintColor = .red

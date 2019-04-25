@@ -1,4 +1,5 @@
 import UIKit
+import Kingfisher
 
 private let cellIdentifier = "BasicCell"
 
@@ -52,13 +53,38 @@ extension UsersViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UsersTableViewCell.identifier, for: indexPath) as! UsersTableViewCell
         cell.config()
+        
         let user = viewModel.users[indexPath.row]
-        let image = viewModel.image
         cell.nameLabel.text = user.name
         cell.idLabel.text = user.username
         cell.emailLabel.text = user.email
         cell.phoneLabel.text = user.phone
-        cell.mainImage.image = image
+        
+        let url = URL(string: "https://picsum.photos/id/\(indexPath.row + 2)/90/90")
+        cell.mainImage.kf.indicatorType = .activity
+        cell.mainImage.kf.setImage(with: url)
+
+//        let processor = DownsamplingImageProcessor(size: cell.mainImage.size)
+//            >> RoundCornerImageProcessor(cornerRadius: 20)
+//        cell.mainImage.kf.setImage(
+//            with: url,
+//            placeholder: UIImage(named: "placeholderImage"),
+//            options: [
+//                .processor(processor),
+//                .scaleFactor(UIScreen.main.scale),
+//                .transition(.fade(1)),
+//                .cacheOriginalImage
+//            ])
+//        {
+//            result in
+//            switch result {
+//            case .success(let value):
+//                print("Task done for: \(value.source.url?.absoluteString ?? "")")
+//            case .failure(let error):
+//                print("Job failed: \(error.localizedDescription)")
+//            }
+//        }
+        
         return cell
     }
     

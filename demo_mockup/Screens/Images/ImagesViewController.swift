@@ -22,8 +22,8 @@ class ImagesViewController: UIViewController {
         button1.layer.shadowRadius = 3
         button1.layer.shadowOpacity = 0.6
 
-        viewDemo.backgroundColor = UIColor.yellow
-        viewDemo.frame = CGRect(x: (screenWidth / 2) - 30, y: (screenHeight / 2) - 30, width: 60, height: 60)
+        viewDemo.backgroundColor = UIColor(displayP3Red: 0.8, green: 0.8, blue: 0.0, alpha: 0.1)
+        viewDemo.frame = CGRect(x: (screenWidth / 2) - 5, y: (screenHeight / 2) - 5, width: 10, height: 10)
         viewDemo.alpha = 1
         navigationItem.title = "Images"
 //        navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "Apply", style: .plain, target: self, action: #selector(self.apply))
@@ -41,12 +41,15 @@ class ImagesViewController: UIViewController {
     
     @IBAction func imgeButton(_ sender: PushButton) {
         self.view.addSubview(viewDemo)
-        UIView.animate(withDuration: 1.3, delay: 0, options: [.repeat, .autoreverse, .curveEaseInOut], animations: {
+        UIView.animate(withDuration: 1.3, delay: 0, options: [ .autoreverse, .curveEaseInOut], animations: {
             self.viewDemo.alpha = 1
-            self.viewDemo.backgroundColor = UIColor.red
+            self.viewDemo.backgroundColor = UIColor(displayP3Red: 0.3, green: 0.1, blue: 0.8, alpha: 1)
             self.viewDemo.frame = CGRect(x: 0, y: 0, width: self.screenWidth, height: self
             .screenHeight)
-        }, completion: nil)
+        },  completion: { (success:Bool) in
+            self.viewDemo.removeFromSuperview()
+        })
+        
     }
     
 }

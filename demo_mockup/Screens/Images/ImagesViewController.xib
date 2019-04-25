@@ -21,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="17366" translatesAutoresizingMaskIntoConstraints="NO" id="gc5-YB-Hb6">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wow" translatesAutoresizingMaskIntoConstraints="NO" id="gc5-YB-Hb6">
                     <rect key="frame" x="0.0" y="118" width="375" height="234"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -53,6 +53,6 @@
         </view>
     </objects>
     <resources>
-        <image name="17366" width="288.07199096679688" height="288.07199096679688"/>
+        <image name="wow" width="288.07199096679688" height="288.07199096679688"/>
     </resources>
 </document>
