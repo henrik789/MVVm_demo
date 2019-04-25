@@ -39,7 +39,6 @@ class UsersViewController: UIViewController {
         viewModel.updateImages { (error) in
             self.tableView.reloadData()
         }
-        
     }
 
 }
@@ -59,31 +58,10 @@ extension UsersViewController: UITableViewDataSource {
         cell.idLabel.text = user.username
         cell.emailLabel.text = user.email
         cell.phoneLabel.text = user.phone
-        
-        let url = URL(string: "https://picsum.photos/id/\(indexPath.row + 2)/90/90")
+        let randomNumber = Int.random(in: 111..<222)
+        let url = URL(string: "https://picsum.photos/id/\(indexPath.row + randomNumber)/90/90")
         cell.mainImage.kf.indicatorType = .activity
         cell.mainImage.kf.setImage(with: url)
-
-//        let processor = DownsamplingImageProcessor(size: cell.mainImage.size)
-//            >> RoundCornerImageProcessor(cornerRadius: 20)
-//        cell.mainImage.kf.setImage(
-//            with: url,
-//            placeholder: UIImage(named: "placeholderImage"),
-//            options: [
-//                .processor(processor),
-//                .scaleFactor(UIScreen.main.scale),
-//                .transition(.fade(1)),
-//                .cacheOriginalImage
-//            ])
-//        {
-//            result in
-//            switch result {
-//            case .success(let value):
-//                print("Task done for: \(value.source.url?.absoluteString ?? "")")
-//            case .failure(let error):
-//                print("Job failed: \(error.localizedDescription)")
-//            }
-//        }
         
         return cell
     }
@@ -94,6 +72,7 @@ extension UsersViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
     }
     
 }

@@ -35,6 +35,8 @@
 		AF6082FF2271C4AD00DDF045 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6082FE2271C4AD00DDF045 /* Kingfisher.framework */; };
 		AF6083002271C4D500DDF045 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6082FE2271C4AD00DDF045 /* Kingfisher.framework */; };
 		AF6083012271C4D500DDF045 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF6082FE2271C4AD00DDF045 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF6083062271D1FD00DDF045 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6083042271D1FD00DDF045 /* MapViewController.swift */; };
+		AF6083072271D1FD00DDF045 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6083052271D1FD00DDF045 /* MapViewController.xib */; };
 		AFBEE2BC225E2FF100B25764 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEE2BA225E2FF100B25764 /* UsersTableViewCell.swift */; };
 		AFBEE2BD225E2FF100B25764 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBEE2BB225E2FF100B25764 /* UsersTableViewCell.xib */; };
 		AFC5FC3422676A500036030A /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5FC3322676A500036030A /* PushButton.swift */; };
@@ -83,6 +85,8 @@
 		AF5D3541225CBC95002641A6 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 		AF5D3543225CC0AE002641A6 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		AF6082FE2271C4AD00DDF045 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = "<group>"; };
+		AF6083042271D1FD00DDF045 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		AF6083052271D1FD00DDF045 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		AFBEE2BA225E2FF100B25764 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		AFBEE2BB225E2FF100B25764 /* UsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersTableViewCell.xib; sourceTree = "<group>"; };
 		AFC5FC3322676A500036030A /* PushButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
@@ -214,6 +218,7 @@
 		AF5D353B225CBC4A002641A6 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				AF6083032271D1CF00DDF045 /* Map */,
 				AF56B5202266117000FFF54D /* Home */,
 				AF2F7DAA22705C8A00055474 /* ImageGallery */,
 				AF56B51F226610C200FFF54D /* Images */,
@@ -232,6 +237,15 @@
 				AFBEE2BB225E2FF100B25764 /* UsersTableViewCell.xib */,
 			);
 			path = Users;
+			sourceTree = "<group>";
+		};
+		AF6083032271D1CF00DDF045 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				AF6083042271D1FD00DDF045 /* MapViewController.swift */,
+				AF6083052271D1FD00DDF045 /* MapViewController.xib */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +310,7 @@
 				AF5D3529225CAEE7002641A6 /* LaunchScreen.storyboard in Resources */,
 				AF2F7DAE22705CEA00055474 /* ImageCollectionViewController.xib in Resources */,
 				AF5D3540225CBC83002641A6 /* UsersViewController.xib in Resources */,
+				AF6083072271D1FD00DDF045 /* MapViewController.xib in Resources */,
 				AF2F7DB62270647400055474 /* GalleryCollectionViewCell.xib in Resources */,
 				AF5D3526225CAEE7002641A6 /* Assets.xcassets in Resources */,
 				AFBEE2BD225E2FF100B25764 /* UsersTableViewCell.xib in Resources */,
@@ -315,6 +330,7 @@
 				AF5D3521225CAEE6002641A6 /* ViewController.swift in Sources */,
 				AF5D3532225CB956002641A6 /* NetworkService.swift in Sources */,
 				AF5D353A225CBB93002641A6 /* User.swift in Sources */,
+				AF6083062271D1FD00DDF045 /* MapViewController.swift in Sources */,
 				AF5D353F225CBC83002641A6 /* UsersViewController.swift in Sources */,
 				AFBEE2BC225E2FF100B25764 /* UsersTableViewCell.swift in Sources */,
 				AF5D3537225CBA27002641A6 /* Request.swift in Sources */,

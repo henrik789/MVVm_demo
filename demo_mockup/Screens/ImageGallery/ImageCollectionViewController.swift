@@ -30,17 +30,22 @@ class ImageCollectionViewController: UIViewController {
 extension ImageCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 18
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GalleryCollectionViewCell.identifier, for: indexPath) as! GalleryCollectionViewCell
         cell.textLabel.text = GalleryCollectionViewCell.identifier
-        let url = URL(string: "https://picsum.photos/id/\(indexPath.row + 20)/600/600")
+        let randomNumber = Int.random(in: 1..<333)
+        let url = URL(string: "https://picsum.photos/id/\(indexPath.row + randomNumber)/600/600")
         cell.imageView.kf.indicatorType = .activity
         cell.imageView.kf.setImage(with: url)
         return cell
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        <#code#>
+//    }
 }
 
 

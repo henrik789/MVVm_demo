@@ -5,7 +5,7 @@ class ImageCollectionViewModel {
     private(set) var users: [User] = []
     //    private(set) var images: [Image] = []
     private(set) var image = UIImage()
-    let title = "Images"
+    let title = "Gallery"
     
     init(dataManager: DataManager) {
         self.dataManager = dataManager
