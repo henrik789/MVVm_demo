@@ -40,6 +40,7 @@
 		AFBEE2BC225E2FF100B25764 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEE2BA225E2FF100B25764 /* UsersTableViewCell.swift */; };
 		AFBEE2BD225E2FF100B25764 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBEE2BB225E2FF100B25764 /* UsersTableViewCell.xib */; };
 		AFC5FC3422676A500036030A /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5FC3322676A500036030A /* PushButton.swift */; };
+		AFD2A52C2272EFAC007C6DBD /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD2A52B2272EFAC007C6DBD /* UIButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,6 +91,7 @@
 		AFBEE2BA225E2FF100B25764 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		AFBEE2BB225E2FF100B25764 /* UsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersTableViewCell.xib; sourceTree = "<group>"; };
 		AFC5FC3322676A500036030A /* PushButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
+		AFD2A52B2272EFAC007C6DBD /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		AF5D351D225CAEE6002641A6 /* demo_mockup */ = {
 			isa = PBXGroup;
 			children = (
+				AFD2A52A2272EF89007C6DBD /* Helpers */,
 				AF56B525226612E000FFF54D /* Navigations */,
 				AF5D353B225CBC4A002641A6 /* Screens */,
 				AF5D3530225CB93C002641A6 /* Services */,
@@ -246,6 +249,14 @@
 				AF6083052271D1FD00DDF045 /* MapViewController.xib */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		AFD2A52A2272EF89007C6DBD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AFD2A52B2272EFAC007C6DBD /* UIButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +349,7 @@
 				AF2F7DB8227098FC00055474 /* ImageCollectionViewModel.swift in Sources */,
 				AF09ACB0226F423D00C90AB5 /* UltravisualLayout.swift in Sources */,
 				AF56B5272266130900FFF54D /* MainNavigationController.swift in Sources */,
+				AFD2A52C2272EFAC007C6DBD /* UIButton.swift in Sources */,
 				AFC5FC3422676A500036030A /* PushButton.swift in Sources */,
 				AF5D3544225CC0AE002641A6 /* ServiceManager.swift in Sources */,
 				AF56B523226611AF00FFF54D /* HomeViewController.swift in Sources */,

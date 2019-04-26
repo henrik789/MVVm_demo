@@ -39,37 +39,9 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.tintColor = .red
         navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
         
-        galleryButton.layer.cornerRadius = 25
-        galleryButton.layer.cornerRadius = 25
-        galleryButton.layer.shadowPath =
-            UIBezierPath(roundedRect: galleryButton.bounds,
-                         cornerRadius: galleryButton.layer.cornerRadius).cgPath
-        galleryButton.layer.shadowColor = UIColor.black.cgColor
-        galleryButton.layer.shadowOpacity = 0.5
-        galleryButton.layer.shadowOffset = CGSize(width: 1, height: -3)
-        galleryButton.layer.shadowRadius = 3.0
-        galleryButton.layer.masksToBounds = false
-        
-        usersButton.layer.cornerRadius = 25
-        usersButton.layer.cornerRadius = 25
-        usersButton.layer.shadowPath =
-            UIBezierPath(roundedRect: usersButton.bounds,
-                         cornerRadius: usersButton.layer.cornerRadius).cgPath
-        usersButton.layer.shadowColor = UIColor.black.cgColor
-        usersButton.layer.shadowOpacity = 0.5
-        usersButton.layer.shadowOffset = CGSize(width: 1, height: -3)
-        usersButton.layer.shadowRadius = 3.0
-        usersButton.layer.masksToBounds = false
-        
-        imageButton.layer.cornerRadius = 25
-        imageButton.layer.shadowPath =
-            UIBezierPath(roundedRect: imageButton.bounds,
-                         cornerRadius: imageButton.layer.cornerRadius).cgPath
-        imageButton.layer.shadowColor = UIColor.black.cgColor
-        imageButton.layer.shadowOpacity = 0.5
-        imageButton.layer.shadowOffset = CGSize(width: 1, height: -3)
-        imageButton.layer.shadowRadius = 3.0
-        imageButton.layer.masksToBounds = false
+        galleryButton.commonStyle()
+        usersButton.commonStyle()
+        imageButton.commonStyle()
         
     }
     @IBAction func imageGalleryButton(_ sender: Any) {
@@ -83,10 +55,7 @@ class HomeViewController: UIViewController {
     @IBAction func imagesButtonAction(_ sender: Any) {
         delegate?.homeViewController(self, didSelect: .images)
     }
-    
-//    private var shadowLayer: CAShapeLayer!
-//    private var cornerRadius: CGFloat = 25.0
-//    private var fillColor: UIColor = .blue // the color applied to the shadowLayer, rather than the view's backgroundColor
+
     
 }
 
