@@ -7,6 +7,10 @@ class MapViewController: UIViewController {
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
     
+    override func loadView() {
+        self.view = MapView.instanceFromNib()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

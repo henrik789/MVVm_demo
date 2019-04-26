@@ -41,6 +41,8 @@
 		AFBEE2BD225E2FF100B25764 /* UsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFBEE2BB225E2FF100B25764 /* UsersTableViewCell.xib */; };
 		AFC5FC3422676A500036030A /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5FC3322676A500036030A /* PushButton.swift */; };
 		AFD2A52C2272EFAC007C6DBD /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD2A52B2272EFAC007C6DBD /* UIButton.swift */; };
+		AFD2A52E2272F395007C6DBD /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD2A52D2272F395007C6DBD /* MapView.xib */; };
+		AFD2A5302272F624007C6DBD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD2A52F2272F624007C6DBD /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,6 +94,8 @@
 		AFBEE2BB225E2FF100B25764 /* UsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersTableViewCell.xib; sourceTree = "<group>"; };
 		AFC5FC3322676A500036030A /* PushButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
 		AFD2A52B2272EFAC007C6DBD /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		AFD2A52D2272F395007C6DBD /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		AFD2A52F2272F624007C6DBD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +251,8 @@
 			children = (
 				AF6083042271D1FD00DDF045 /* MapViewController.swift */,
 				AF6083052271D1FD00DDF045 /* MapViewController.xib */,
+				AFD2A52F2272F624007C6DBD /* MapView.swift */,
+				AFD2A52D2272F395007C6DBD /* MapView.xib */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 				AF2F7DAE22705CEA00055474 /* ImageCollectionViewController.xib in Resources */,
 				AF5D3540225CBC83002641A6 /* UsersViewController.xib in Resources */,
 				AF6083072271D1FD00DDF045 /* MapViewController.xib in Resources */,
+				AFD2A52E2272F395007C6DBD /* MapView.xib in Resources */,
 				AF2F7DB62270647400055474 /* GalleryCollectionViewCell.xib in Resources */,
 				AF5D3526225CAEE7002641A6 /* Assets.xcassets in Resources */,
 				AFBEE2BD225E2FF100B25764 /* UsersTableViewCell.xib in Resources */,
@@ -341,6 +348,7 @@
 				AF5D3521225CAEE6002641A6 /* ViewController.swift in Sources */,
 				AF5D3532225CB956002641A6 /* NetworkService.swift in Sources */,
 				AF5D353A225CBB93002641A6 /* User.swift in Sources */,
+				AFD2A5302272F624007C6DBD /* MapView.swift in Sources */,
 				AF6083062271D1FD00DDF045 /* MapViewController.swift in Sources */,
 				AF5D353F225CBC83002641A6 /* UsersViewController.swift in Sources */,
 				AFBEE2BC225E2FF100B25764 /* UsersTableViewCell.swift in Sources */,
