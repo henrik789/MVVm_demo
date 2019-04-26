@@ -48,6 +48,7 @@ class ImagesViewController: UIViewController {
             .screenHeight)
         },  completion: { (success:Bool) in
             self.viewDemo.removeFromSuperview()
+            self.updateFocusIfNeeded()
         })
         
     }

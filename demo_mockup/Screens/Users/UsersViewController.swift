@@ -6,7 +6,7 @@ private let cellIdentifier = "BasicCell"
 class UsersViewController: UIViewController {
     
     let viewModel: UsersViewModel
-    
+
     @IBOutlet weak var tableView: UITableView!
     
     init(viewModel: UsersViewModel) {
@@ -74,8 +74,10 @@ extension UsersViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = MapViewController() //change this to your class name
+        let vc = MapViewController()
         self.present(vc, animated: true, completion: nil)
+//        self.view = MapView.instanceFromNib()
+//        let subview = MapView.instanceFromNib()
         
     }
     

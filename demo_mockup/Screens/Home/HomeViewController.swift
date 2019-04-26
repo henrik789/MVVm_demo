@@ -34,10 +34,11 @@ class HomeViewController: UIViewController {
     
 //        upperImage.transform = CGAffineTransform(rotationAngle: (90.0 * .pi) / 180.0)
 //        lowerImage.transform = CGAffineTransform(rotationAngle: (270.0 * .pi) / 180.0)
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.barStyle = .default
-        navigationController?.navigationBar.tintColor = .red
-        navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
+        let navbar = navigationController?.navigationBar
+        navbar?.prefersLargeTitles = true
+        navbar?.barStyle = .default
+        navbar?.tintColor = .red
+        navbar?.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
         
         galleryButton.commonStyle()
         usersButton.commonStyle()

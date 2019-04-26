@@ -13,7 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="demo_mockup" customModuleProvider="target">
             <connections>
                 <outlet property="fxView" destination="GJM-U1-brW" id="knK-dk-8Nl"/>
-                <outlet property="mapView" destination="gpZ-gU-352" id="1TR-1u-ZSX"/>
+                <outlet property="mapView" destination="gpZ-gU-352" id="7PZ-lR-D2T"/>
                 <outlet property="textLabel" destination="MxT-jV-ZCk" id="Uz2-Jb-6ty"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
