@@ -51,6 +51,7 @@ class MapViewController: UIViewController {
         case .authorizedWhenInUse:
             mapView.showsUserLocation = true
             centerViewOnUserLocation()
+            locationManager.startUpdatingLocation()
         case .denied:
             break
         case .notDetermined:

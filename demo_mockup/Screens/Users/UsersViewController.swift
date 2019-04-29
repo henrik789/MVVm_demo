@@ -6,6 +6,9 @@ private let cellIdentifier = "BasicCell"
 class UsersViewController: UIViewController {
     
     let viewModel: UsersViewModel
+    var mapView: UIView = UIView()
+    var screenWidth = CGFloat()
+    var screenHeight = CGFloat()
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -30,6 +33,12 @@ class UsersViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         loadData()
+        screenWidth = self.view.frame.size.width
+        screenHeight = self.view.frame.size.height
+        mapView = UIView(frame: CGRect(x: 30, y: self.screenHeight / 3, width: screenWidth / 3, height: screenHeight / 3))
+        mapView.backgroundColor = UIColor(named: "FarrowBall")
+        mapView.layer.cornerRadius = 20
+
     }
     
     func loadData() {
@@ -54,14 +63,16 @@ extension UsersViewController: UITableViewDataSource {
         cell.config()
         
         let user = viewModel.users[indexPath.row]
+        
         cell.nameLabel.text = user.name
         cell.idLabel.text = user.username
         cell.emailLabel.text = user.email
         cell.phoneLabel.text = user.phone
-        let randomNumber = Int.random(in: 77..<99)
+        let randomNumber = Int.random(in: 33..<199)
         let url = URL(string: "https://picsum.photos/id/\(indexPath.row + randomNumber)/90/90")
         cell.mainImage.kf.indicatorType = .activity
-        cell.mainImage.kf.setImage(with: url)
+        let processor = RoundCornerImageProcessor(cornerRadius: 15)
+        cell.mainImage.kf.setImage(with: url, options: [.processor(processor)])
         
         return cell
     }
@@ -74,11 +85,28 @@ extension UsersViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = MapViewController()
-        self.present(vc, animated: true, completion: nil)
+//        let vc = MapViewController()
+//        self.present(vc, animated: true, completion: nil)
 //        self.view = MapView.instanceFromNib()
 //        let subview = MapView.instanceFromNib()
+         animatePopUp()
         
     }
     
+    func animatePopUp(){
+        self.view.addSubview(mapView)
+        
+        UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
+            self.mapView.alpha = 1
+            self.mapView.backgroundColor = UIColor(named: "FarrowBall")
+            self.mapView.frame = CGRect(x: 30, y: self.screenHeight / 3, width: self.screenWidth - 60, height: self.screenHeight / 4)
+            self.mapView.layer.cornerRadius = 20
+
+        }) { _ in
+//            self.mapView.removeFromSuperview()
+            
+        }
+
+    }
 }
+

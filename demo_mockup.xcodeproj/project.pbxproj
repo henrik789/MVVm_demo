@@ -43,6 +43,7 @@
 		AFD2A52C2272EFAC007C6DBD /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD2A52B2272EFAC007C6DBD /* UIButton.swift */; };
 		AFD2A52E2272F395007C6DBD /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFD2A52D2272F395007C6DBD /* MapView.xib */; };
 		AFD2A5302272F624007C6DBD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD2A52F2272F624007C6DBD /* MapView.swift */; };
+		AFE2654222772243009AB116 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2654122772243009AB116 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -96,6 +97,7 @@
 		AFD2A52B2272EFAC007C6DBD /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		AFD2A52D2272F395007C6DBD /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		AFD2A52F2272F624007C6DBD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		AFE2654122772243009AB116 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				AFD2A52B2272EFAC007C6DBD /* UIButton.swift */,
+				AFE2654122772243009AB116 /* UIColor.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				AF5D3537225CBA27002641A6 /* Request.swift in Sources */,
 				AF2F7DAD22705CEA00055474 /* ImageCollectionViewController.swift in Sources */,
 				AF2F7DB8227098FC00055474 /* ImageCollectionViewModel.swift in Sources */,
+				AFE2654222772243009AB116 /* UIColor.swift in Sources */,
 				AF09ACB0226F423D00C90AB5 /* UltravisualLayout.swift in Sources */,
 				AF56B5272266130900FFF54D /* MainNavigationController.swift in Sources */,
 				AFD2A52C2272EFAC007C6DBD /* UIButton.swift in Sources */,

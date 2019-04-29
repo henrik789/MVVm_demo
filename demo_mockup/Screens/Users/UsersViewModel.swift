@@ -13,6 +13,7 @@ class UsersViewModel {
     
     func updateUsers(completion: @escaping (Error?) -> Void) {
         dataManager.getUsers { (users, error) in
+            print("- -  checking - -")
             guard error == nil else {
                 dispatchOnMain(completion, with: error)
                 return

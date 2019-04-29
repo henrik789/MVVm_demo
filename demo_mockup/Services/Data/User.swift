@@ -10,3 +10,5 @@ struct User: Codable {
 struct Image {
     let image: UIImage = UIImage()
 }
+
+

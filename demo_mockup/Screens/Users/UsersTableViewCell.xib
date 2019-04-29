@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,34 +21,34 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XAP-qr-uQx">
-                        <rect key="frame" x="90" y="10" width="152" height="17"/>
+                        <rect key="frame" x="90" y="10" width="152" height="20.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwf-5O-ZyG" userLabel="idLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="35.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDH-fW-RRQ" userLabel="nameLabel">
-                                <rect key="frame" x="45.5" y="0.0" width="106.5" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="52" y="0.0" width="100" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="rri-21-eyV">
-                        <rect key="frame" x="90" y="29" width="152" height="38"/>
+                        <rect key="frame" x="90" y="32.5" width="152" height="34.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lil-CC-ugH" userLabel="phoneLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="152" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="0.0" y="0.0" width="152" height="14.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JC-se-12Q" userLabel="emailLabel">
-                                <rect key="frame" x="0.0" y="21" width="152" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="0.0" y="18.5" width="152" height="16"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -61,6 +62,7 @@
                         </constraints>
                     </imageView>
                 </subviews>
+                <color key="backgroundColor" name="FarrowWhite"/>
                 <constraints>
                     <constraint firstItem="rri-21-eyV" firstAttribute="leading" secondItem="z87-jk-Rjf" secondAttribute="trailing" constant="15" id="Jkh-LQ-DUq"/>
                     <constraint firstItem="XAP-qr-uQx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Ld6-on-Wf4"/>
@@ -74,6 +76,7 @@
                     <constraint firstItem="rri-21-eyV" firstAttribute="top" secondItem="XAP-qr-uQx" secondAttribute="bottom" constant="2" id="z0f-23-AfG"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" name="FarrowPale"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="emailLabel" destination="4JC-se-12Q" id="Eox-if-cgi"/>
@@ -85,4 +88,12 @@
             <point key="canvasLocation" x="108.8" y="139.43028485757122"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <namedColor name="FarrowPale">
+            <color red="0.90980392156862744" green="0.93333333333333335" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FarrowWhite">
+            <color red="0.98431372549019602" green="0.97254901960784312" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

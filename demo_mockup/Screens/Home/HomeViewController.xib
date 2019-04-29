@@ -6,12 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="demo_mockup" customModuleProvider="target">
             <connections>
+                <outlet property="centerConstraint" destination="H4y-Qb-EZh" id="vRv-we-Kt3"/>
                 <outlet property="galleryButton" destination="9ME-yD-ue2" id="8NM-Lr-UyQ"/>
                 <outlet property="imageButton" destination="YY9-CB-kXD" id="O7d-Ld-4RS"/>
                 <outlet property="usersButton" destination="wX4-N7-H9P" id="Gcw-Ba-7pr"/>
@@ -28,11 +30,11 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YY9-CB-kXD">
                             <rect key="frame" x="0.0" y="0.0" width="175" height="59"/>
-                            <color key="backgroundColor" red="0.97462624311447144" green="0.12720018625259399" blue="0.018304426223039627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" name="FarrowBall"/>
                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>
                             <inset key="contentEdgeInsets" minX="40" minY="10" maxX="40" maxY="10"/>
                             <state key="normal" title="Images">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleColor" name="FarrowWhite"/>
                             </state>
                             <connections>
                                 <action selector="imagesButtonAction:" destination="-1" eventType="touchUpInside" id="HWt-MZ-R4e"/>
@@ -40,11 +42,11 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ME-yD-ue2" userLabel="Gallery">
                             <rect key="frame" x="0.0" y="89" width="175" height="59"/>
-                            <color key="backgroundColor" red="0.97462624311447144" green="0.12720018625259399" blue="0.018304426223039627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" name="FarrowBall"/>
                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>
                             <inset key="contentEdgeInsets" minX="40" minY="10" maxX="40" maxY="10"/>
                             <state key="normal" title="Gallery">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleColor" name="FarrowWhite"/>
                             </state>
                             <connections>
                                 <action selector="imageGalleryButton:" destination="-1" eventType="touchUpInside" id="CYs-O1-ZVG"/>
@@ -52,11 +54,11 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wX4-N7-H9P">
                             <rect key="frame" x="0.0" y="178" width="175" height="59"/>
-                            <color key="backgroundColor" red="0.97462624311447144" green="0.12720018625259399" blue="0.018304426223039627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" name="FarrowBall"/>
                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>
                             <inset key="contentEdgeInsets" minX="40" minY="10" maxX="40" maxY="10"/>
                             <state key="normal" title="Users">
-                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="titleColor" name="FarrowWhite"/>
                             </state>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
@@ -69,14 +71,35 @@
                         </button>
                     </subviews>
                 </stackView>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDz-IJ-65u">
+                    <rect key="frame" x="120" y="575" width="135" height="30"/>
+                    <color key="backgroundColor" name="FarrowBall"/>
+                    <state key="normal" title="Animate">
+                        <color key="titleColor" name="FarrowWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="animateButton:" destination="-1" eventType="touchUpInside" id="cI3-z1-QlT"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" name="FarrowWhite"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eDz-IJ-65u" secondAttribute="trailing" constant="120" id="0fD-7J-0bt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eDz-IJ-65u" secondAttribute="bottom" constant="62" id="616-ky-TLa"/>
                 <constraint firstItem="2JN-qj-pBZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Gmq-Y2-b5R"/>
                 <constraint firstItem="2JN-qj-pBZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H4y-Qb-EZh"/>
+                <constraint firstItem="eDz-IJ-65u" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="120" id="RQe-Gn-pP4"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>
         </view>
     </objects>
+    <resources>
+        <namedColor name="FarrowBall">
+            <color red="0.34901960784313724" green="0.61568627450980395" blue="0.7686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FarrowWhite">
+            <color red="0.98431372549019602" green="0.97254901960784312" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
