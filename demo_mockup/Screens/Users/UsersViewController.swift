@@ -89,7 +89,7 @@ extension UsersViewController: UITableViewDelegate {
 //        self.present(vc, animated: true, completion: nil)
 //        self.view = MapView.instanceFromNib()
 //        let subview = MapView.instanceFromNib()
-        self.view.animatePopUp(view: mapView)
+        self.view.animatePopUp(view: mapView, screenWidth: screenWidth, screenHeight: screenHeight)
         
     }
     

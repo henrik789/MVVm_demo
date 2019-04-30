@@ -15,7 +15,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var galleryButton: UIButton!
     @IBOutlet weak var usersButton: UIButton!
     @IBOutlet weak var centerConstraint: NSLayoutConstraint!
-    
+    var screenWidth = CGFloat()
+    var screenHeight = CGFloat()
     var snowView: SnowView!
     weak var delegate: HomeViewControllerDelegate?
     
@@ -58,13 +59,7 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController {
-    func config(){
-        
-        snowView = SnowView(frame: CGRect(x: -150, y:-100, width: 300, height: 50))
-        let snowClipView = UIView(frame: view.frame.offsetBy(dx: 0, dy: 50))
-        snowClipView.clipsToBounds = true
-        snowClipView.addSubview(snowView)
-        view.addSubview(snowClipView)
+    @objc func config(){
         
         centerConstraint.constant = 0
         //        upperImage.transform = CGAffineTransform(rotationAngle: (90.0 * .pi) / 180.0)
@@ -75,10 +70,56 @@ extension HomeViewController {
         navbar?.barTintColor = UIColor(named: "FarrowWhite")
         navbar?.tintColor = UIColor(named: "FarrowBall")
         navbar?.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "FarrowBall") as Any]
-        
-        galleryButton.commonStyle()
-        usersButton.commonStyle()
-        imageButton.commonStyle()
-        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(config))
+
+        animateButton1(button: self.galleryButton, screenWidth: screenWidth, screenHeight: screenHeight)
     }
+    
+    func animateButton1(button: UIButton, screenWidth: CGFloat, screenHeight: CGFloat){
+        
+        UIButton.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
+            button.alpha = 1
+            button.backgroundColor = UIColor(named: "FarrowBall")
+            button.frame = CGRect(x: 10, y: 150, width: screenWidth / 2, height: screenHeight / 6)
+            button.layer.cornerRadius = 20
+            button.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 2)
+            
+        }) { _ in
+            
+            self.galleryButton.commonStyle()
+            self.animateButton2(button: self.usersButton, screenWidth: screenWidth, screenHeight: screenHeight)
+        }
+    }
+    
+    func animateButton2(button: UIButton, screenWidth: CGFloat, screenHeight: CGFloat){
+        
+        UIButton.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
+            button.alpha = 1
+            button.backgroundColor = UIColor(named: "FarrowBall")
+            button.frame = CGRect(x: 10, y: 250, width: screenWidth / 2, height: screenHeight / 6)
+            button.layer.cornerRadius = 20
+            button.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 2)
+            
+        }) { _ in
+            self.usersButton.commonStyle()
+            self.animateButton3(button: self.imageButton, screenWidth: screenWidth, screenHeight: screenHeight)
+        }
+    }
+    
+    func animateButton3(button: UIButton, screenWidth: CGFloat, screenHeight: CGFloat){
+        
+        UIButton.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
+            button.alpha = 1
+            button.backgroundColor = UIColor(named: "FarrowBall")
+            button.frame = CGRect(x: 10, y: 400, width: screenWidth / 2, height: screenHeight / 6)
+            button.layer.cornerRadius = 20
+            button.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 2)
+            
+        }) { _ in
+            
+            self.imageButton.commonStyle()
+//            self.animateButton3(button: self.imageButton, screenWidth: screenWidth, screenHeight: screenHeight)
+        }
+    }
+    
 }

@@ -18,18 +18,18 @@ class SnowView: UIView {
         emitterCell.lifetime = 2.5
         emitterCell.lifetimeRange = 2
         emitterCell.color = UIColor.white.cgColor
-        emitterCell.redRange = 0.5
+        emitterCell.redRange = 1
         emitterCell.blueRange = 0.5
-        emitterCell.greenRange = 0.5
-        emitterCell.velocity = 10
+        emitterCell.greenRange = 0.9
+        emitterCell.velocity = 5
         emitterCell.velocityRange = 350
         emitterCell.emissionRange = CGFloat.pi / 2
         emitterCell.emissionLongitude = -CGFloat.pi
         emitterCell.yAcceleration = 70
         emitterCell.xAcceleration = 0
         emitterCell.scale = 0.33
-        emitterCell.scaleRange = 1.25
-        emitterCell.scaleSpeed = -0.25
+        emitterCell.scaleRange = 2.25
+        emitterCell.scaleSpeed = -0.55
         emitterCell.alphaRange = 0.5
         emitterCell.alphaSpeed = -0.15
         

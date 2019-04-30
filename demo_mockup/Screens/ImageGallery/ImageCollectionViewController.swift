@@ -43,9 +43,10 @@ extension ImageCollectionViewController: UICollectionViewDelegate, UICollectionV
         return cell
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = MapViewController()
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 
 
