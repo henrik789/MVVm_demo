@@ -89,24 +89,10 @@ extension UsersViewController: UITableViewDelegate {
 //        self.present(vc, animated: true, completion: nil)
 //        self.view = MapView.instanceFromNib()
 //        let subview = MapView.instanceFromNib()
-         animatePopUp()
+        self.view.animatePopUp(view: mapView)
         
     }
     
-    func animatePopUp(){
-        self.view.addSubview(mapView)
-        
-        UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
-            self.mapView.alpha = 1
-            self.mapView.backgroundColor = UIColor(named: "FarrowBall")
-            self.mapView.frame = CGRect(x: 30, y: self.screenHeight / 3, width: self.screenWidth - 60, height: self.screenHeight / 4)
-            self.mapView.layer.cornerRadius = 20
 
-        }) { _ in
-//            self.mapView.removeFromSuperview()
-            
-        }
-
-    }
 }
 

@@ -31,25 +31,6 @@ class HomeViewController: UIViewController {
         config()
     }
     
-    func config(){
-        centerConstraint.constant = 0
-//        upperImage.transform = CGAffineTransform(rotationAngle: (90.0 * .pi) / 180.0)
-//        lowerImage.transform = CGAffineTransform(rotationAngle: (270.0 * .pi) / 180.0)
-        let navbar = navigationController?.navigationBar
-        navbar?.prefersLargeTitles = true
-        navbar?.barStyle = .default
-        navbar?.barTintColor = UIColor(named: "FarrowWhite")
-        navbar?.tintColor = UIColor(named: "FarrowBall")
-        navbar?.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "FarrowBall") as Any]
-        
-        galleryButton.commonStyle()
-        usersButton.commonStyle()
-        imageButton.commonStyle()
-        
-    }
-    
-    
-    
     @IBAction func imageGalleryButton(_ sender: Any) {
         delegate?.homeViewController(self, didSelect: .imageGallery)
     }
@@ -75,4 +56,21 @@ class HomeViewController: UIViewController {
     
 }
 
-
+extension HomeViewController {
+    func config(){
+        centerConstraint.constant = 0
+        //        upperImage.transform = CGAffineTransform(rotationAngle: (90.0 * .pi) / 180.0)
+        //        lowerImage.transform = CGAffineTransform(rotationAngle: (270.0 * .pi) / 180.0)
+        let navbar = navigationController?.navigationBar
+        navbar?.prefersLargeTitles = true
+        navbar?.barStyle = .default
+        navbar?.barTintColor = UIColor(named: "FarrowWhite")
+        navbar?.tintColor = UIColor(named: "FarrowBall")
+        navbar?.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "FarrowBall") as Any]
+        
+        galleryButton.commonStyle()
+        usersButton.commonStyle()
+        imageButton.commonStyle()
+        
+    }
+}
