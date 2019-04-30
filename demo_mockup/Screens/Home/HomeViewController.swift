@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var usersButton: UIButton!
     @IBOutlet weak var centerConstraint: NSLayoutConstraint!
     
+    var snowView: SnowView!
     weak var delegate: HomeViewControllerDelegate?
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -58,6 +59,13 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController {
     func config(){
+        
+        snowView = SnowView(frame: CGRect(x: -150, y:-100, width: 300, height: 50))
+        let snowClipView = UIView(frame: view.frame.offsetBy(dx: 0, dy: 50))
+        snowClipView.clipsToBounds = true
+        snowClipView.addSubview(snowView)
+        view.addSubview(snowClipView)
+        
         centerConstraint.constant = 0
         //        upperImage.transform = CGAffineTransform(rotationAngle: (90.0 * .pi) / 180.0)
         //        lowerImage.transform = CGAffineTransform(rotationAngle: (270.0 * .pi) / 180.0)
