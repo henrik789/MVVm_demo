@@ -22,21 +22,19 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wow" translatesAutoresizingMaskIntoConstraints="NO" id="gc5-YB-Hb6">
-                    <rect key="frame" x="0.0" y="118" width="375" height="234"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BHw-wn-g34">
-                    <rect key="frame" x="16" y="360" width="343" height="164"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BHw-wn-g34">
+                    <rect key="frame" x="16" y="391" width="343" height="138"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7J-r2-lZu" customClass="PushButton" customModule="demo_mockup" customModuleProvider="target">
-                    <rect key="frame" x="147" y="567" width="80" height="80"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7J-r2-lZu" customClass="PushButton" customModule="demo_mockup" customModuleProvider="target">
+                    <rect key="frame" x="162.5" y="567" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="rjg-Ox-LKa"/>
+                        <constraint firstAttribute="height" constant="50" id="wQd-A4-ZjY"/>
+                    </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
                             <color key="value" name="FarrowBall"/>
@@ -47,8 +45,22 @@
                         <action selector="imgeButton:" destination="-1" eventType="touchUpInside" id="9i0-hg-eiF"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="wow" translatesAutoresizingMaskIntoConstraints="NO" id="gc5-YB-Hb6">
+                    <rect key="frame" x="43" y="95" width="288" height="288"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="i7J-r2-lZu" firstAttribute="centerX" secondItem="gc5-YB-Hb6" secondAttribute="centerX" id="10M-ap-Qrj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="i7J-r2-lZu" secondAttribute="bottom" constant="50" id="5qD-D4-AAq"/>
+                <constraint firstItem="BHw-wn-g34" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="8ot-ki-lV3"/>
+                <constraint firstItem="i7J-r2-lZu" firstAttribute="top" secondItem="BHw-wn-g34" secondAttribute="bottom" constant="38" id="EQe-q2-IYy"/>
+                <constraint firstItem="gc5-YB-Hb6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="43" id="aUu-Zy-mMB"/>
+                <constraint firstItem="gc5-YB-Hb6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="75" id="b8z-DM-5fL"/>
+                <constraint firstItem="i7J-r2-lZu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="icz-JW-tcc"/>
+                <constraint firstItem="i7J-r2-lZu" firstAttribute="centerX" secondItem="BHw-wn-g34" secondAttribute="centerX" id="irA-Ci-WPa"/>
+                <constraint firstItem="BHw-wn-g34" firstAttribute="top" secondItem="gc5-YB-Hb6" secondAttribute="bottom" constant="8" symbolic="YES" id="uAg-DW-hlH"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="140" y="154.27286356821591"/>
         </view>

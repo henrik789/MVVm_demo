@@ -7,8 +7,6 @@ class UsersViewController: UIViewController {
     
     let viewModel: UsersViewModel
     var mapView: UIView = UIView()
-    var screenWidth = CGFloat()
-    var screenHeight = CGFloat()
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -33,9 +31,7 @@ class UsersViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         loadData()
-        screenWidth = self.view.frame.size.width
-        screenHeight = self.view.frame.size.height
-        mapView = UIView(frame: CGRect(x: 30, y: self.screenHeight / 3, width: screenWidth / 3, height: screenHeight / 3))
+        mapView = UIView(frame: CGRect(x: 30, y: screenHeight / 3, width: screenWidth / 3, height: screenHeight / 3))
         mapView.backgroundColor = UIColor(named: "FarrowBall")
         mapView.layer.cornerRadius = 20
 

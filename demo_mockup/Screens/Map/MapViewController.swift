@@ -22,7 +22,7 @@ class MapViewController: UIViewController {
     }
 
     var locationManager = CLLocationManager()
-    let regionMeters: Double = 1000
+    let regionMeters: Double = 10000
 
     
     func setupLocationManager() {

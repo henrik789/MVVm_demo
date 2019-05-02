@@ -17,6 +17,7 @@
                 <outlet property="galleryButton" destination="9ME-yD-ue2" id="8NM-Lr-UyQ"/>
                 <outlet property="imageButton" destination="YY9-CB-kXD" id="O7d-Ld-4RS"/>
                 <outlet property="usersButton" destination="wX4-N7-H9P" id="Gcw-Ba-7pr"/>
+                <outlet property="verticalConstraint" destination="Gmq-Y2-b5R" id="IPH-KM-WrB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -40,7 +41,7 @@
                                 <action selector="imagesButtonAction:" destination="-1" eventType="touchUpInside" id="HWt-MZ-R4e"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ME-yD-ue2" userLabel="Gallery">
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ME-yD-ue2" userLabel="Gallery">
                             <rect key="frame" x="0.0" y="89" width="175" height="59"/>
                             <color key="backgroundColor" name="FarrowBall"/>
                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>

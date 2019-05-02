@@ -3,7 +3,6 @@ import UIKit
 extension UIButton {
     func commonStyle() {
         layer.cornerRadius = 20
-        layer.cornerRadius = 20
         layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: layer.cornerRadius).cgPath
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOpacity = 0.5
