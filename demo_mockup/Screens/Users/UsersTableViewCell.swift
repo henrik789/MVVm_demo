@@ -22,7 +22,7 @@ class UsersTableViewCell: UITableViewCell {
     func config(){
         
         mainImage.layer.shadowColor = UIColor.black.cgColor
-        mainImage.layer.shadowOpacity = 0.6
+        mainImage.layer.shadowOpacity = 0.8
         mainImage.layer.shadowOffset = CGSize(width: 2, height: 3)
         let size = CGSize(width: 60, height: 60)
         let rect = CGRect(origin: .zero, size: size)

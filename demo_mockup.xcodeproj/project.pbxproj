@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E63D852387C9B09EB13A38A /* Pods_demo_mockup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 452E631400D02A4CC74B3BEC /* Pods_demo_mockup.framework */; };
 		AF09ACAA226F06C100C90AB5 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF09ACA9226F06C100C90AB5 /* Animation.swift */; };
 		AF09ACB0226F423D00C90AB5 /* UltravisualLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF09ACAF226F423D00C90AB5 /* UltravisualLayout.swift */; };
 		AF2CE48D22783F6F001BBA2E /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2CE48C22783F6F001BBA2E /* Animations.swift */; };
@@ -34,9 +35,6 @@
 		AF5D3540225CBC83002641A6 /* UsersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF5D353E225CBC83002641A6 /* UsersViewController.xib */; };
 		AF5D3542225CBC95002641A6 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D3541225CBC95002641A6 /* UsersViewModel.swift */; };
 		AF5D3544225CC0AE002641A6 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5D3543225CC0AE002641A6 /* ServiceManager.swift */; };
-		AF6082FF2271C4AD00DDF045 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6082FE2271C4AD00DDF045 /* Kingfisher.framework */; };
-		AF6083002271C4D500DDF045 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6082FE2271C4AD00DDF045 /* Kingfisher.framework */; };
-		AF6083012271C4D500DDF045 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF6082FE2271C4AD00DDF045 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF6083062271D1FD00DDF045 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6083042271D1FD00DDF045 /* MapViewController.swift */; };
 		AF6083072271D1FD00DDF045 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF6083052271D1FD00DDF045 /* MapViewController.xib */; };
 		AFBEE2BC225E2FF100B25764 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEE2BA225E2FF100B25764 /* UsersTableViewCell.swift */; };
@@ -48,21 +46,8 @@
 		AFE2654222772243009AB116 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE2654122772243009AB116 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		AF6083022271C4D500DDF045 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				AF6083012271C4D500DDF045 /* Kingfisher.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		452E631400D02A4CC74B3BEC /* Pods_demo_mockup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demo_mockup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF09ACA9226F06C100C90AB5 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		AF09ACAF226F423D00C90AB5 /* UltravisualLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UltravisualLayout.swift; sourceTree = "<group>"; };
 		AF2CE48C22783F6F001BBA2E /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
@@ -102,6 +87,8 @@
 		AFD2A52D2272F395007C6DBD /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		AFD2A52F2272F624007C6DBD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		AFE2654122772243009AB116 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C183E29B865B290C061F4654 /* Pods-demo_mockup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo_mockup.debug.xcconfig"; path = "Target Support Files/Pods-demo_mockup/Pods-demo_mockup.debug.xcconfig"; sourceTree = "<group>"; };
+		DE853E4CB51EC91E1837C525 /* Pods-demo_mockup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo_mockup.release.xcconfig"; path = "Target Support Files/Pods-demo_mockup/Pods-demo_mockup.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,14 +96,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF6083002271C4D500DDF045 /* Kingfisher.framework in Frameworks */,
-				AF6082FF2271C4AD00DDF045 /* Kingfisher.framework in Frameworks */,
+				5E63D852387C9B09EB13A38A /* Pods_demo_mockup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6205C862C4F9A9789A020027 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				452E631400D02A4CC74B3BEC /* Pods_demo_mockup.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AF2F7DAA22705C8A00055474 /* ImageGallery */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +155,8 @@
 			children = (
 				AF5D351D225CAEE6002641A6 /* demo_mockup */,
 				AF5D351C225CAEE6002641A6 /* Products */,
+				DFCBD50F599964D6447CBED5 /* Pods */,
+				6205C862C4F9A9789A020027 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -266,6 +262,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		DFCBD50F599964D6447CBED5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C183E29B865B290C061F4654 /* Pods-demo_mockup.debug.xcconfig */,
+				DE853E4CB51EC91E1837C525 /* Pods-demo_mockup.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,10 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF5D352D225CAEE7002641A6 /* Build configuration list for PBXNativeTarget "demo_mockup" */;
 			buildPhases = (
+				5250E36680128BACF039E2F9 /* [CP] Check Pods Manifest.lock */,
 				AF5D3517225CAEE6002641A6 /* Sources */,
 				AF5D3518225CAEE6002641A6 /* Frameworks */,
 				AF5D3519225CAEE6002641A6 /* Resources */,
-				AF6083022271C4D500DDF045 /* Embed Frameworks */,
+				9090837CFE9BB8EF5402BDDF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,6 +346,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5250E36680128BACF039E2F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-demo_mockup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9090837CFE9BB8EF5402BDDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-demo_mockup/Pods-demo_mockup-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-demo_mockup/Pods-demo_mockup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF5D3517225CAEE6002641A6 /* Sources */ = {
@@ -514,6 +567,7 @@
 		};
 		AF5D352E225CAEE7002641A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C183E29B865B290C061F4654 /* Pods-demo_mockup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +591,7 @@
 		};
 		AF5D352F225CAEE7002641A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE853E4CB51EC91E1837C525 /* Pods-demo_mockup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
